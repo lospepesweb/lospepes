@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 18px;
+}
+@font-face {
+	font-family: "Josefin";
+	src: url("../fonts/JosefinSans-Regular.ttf");
+}
+@font-face {
+	font-family: "Merri";
+	src: url("../fonts/Merriweather-Regular.ttf");
+}
+div.menu_bar {
+	display: none;
+}
+.nav {
+	animation-delay: 2.5s;
+}
+nav ul {
+	list-style-type: none;
+	width: 50%;
+	margin: 1% auto;
+}
+nav ul li {
+	line-height: 1rem;
+	text-align: center;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	float: left;
+	width: 25%;
+	padding: 1rem;
+}
+nav ul li a {
+	font-family: Josefin;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-decoration: none;
+	color: #000;
+	transition: all 0.3s ease;
+}
+nav ul li a:hover {
+	color: #AFB500/*rgba(0,0,0, 0.5)*/;
+}
+header img {
+	width: 50%;
+	margin: 5% 25% 5% 25%;
+}
+p {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+	.flecha1 {
+		animation-delay: 3s;
+	}
+.nosotros, .works, .contacto {
+	width: 70%;
+	margin: 15%;
+}
+.nosotros .linea, .works .linea, .contacto .linea {
+	margin: 1.5% 0;
+	float: left;
+	width: 30%;
+	height: 2px;
+	border:1px solid #AFB500;
+}
+.nosotros h1, .works h1, .contacto h1 {
+	letter-spacing: 2px;
+	font-family: Josefin;
+	text-align: center;
+	float: left;
+	width: 40%;
+	margin-bottom: 15%;
+}
+.nosotros p {
+	clear: both;
+	font-family: Merri;
+	margin-top: 5%; 
+}
+.works {
+	height: 500px
+}
+.container {
+	width: 33%;
+	padding: 7%;
+	float: left;
+}
+section.worksImg {
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 200px;
+}
+section.img1 {
+	background-image: url("../img/mercedarioBYN.png");
+	background-position: center;
+	animation-delay: 0.5s;
+	transition: background-image 0.3s ease;
+}
+section.img1:hover {
+	background-image: url("../img/mercedario1.png");
+}
+section.img2 {
+	background-image: url("../img/socialesBYC.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	animation-delay: 1s;
+	transition: background-image 0.3s ease;
+}
+section.img2:hover {
+	background-image: url("../img/sociales.png");
+}
+section.img3 {
+	background-image: url("../img/newportBYC.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	animation-delay: 1.5s;
+	transition: background-image 0.3s ease;
+}
+section.img3:hover {
+	background-image: url("../img/newport.jpg");
+}
+div.color:hover {
+	background-color: rgba(0,0,0,0);
+}
+div.limpia {
+	clear: both;
+}
+section.ali {
+	background-image: url("../img/ali.jpg");
+	-webkit-background-image: url("../img/ali.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+	height: 600px;
+}
+.contacto p {
+	font-family: Merri;
+	width: 50%;
+	margin: 2% auto;
+	clear: both;
+}
+.contacto ul {
+	list-style-type: none;
+	width: 20%;
+	margin: 5% auto;
+}
+.contacto ul li {
+	width: 20%;
+	float: left;
+}
+.contacto ul li a {
+	text-decoration: none;
+	color: #000;
+	transition: all 0.3s ease;
+}
+.contacto ul li a:hover {
+	color: #AFB500;
+}
+
+@media screen and (max-width: 850px) {
+	.nav {
+		animation-delay: 0s;
+		z-index: 99999999999999999999999;
+	}
+	nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		top:25px;
+		margin:0;
+		position: fixed;
+	}
+	nav ul {
+		background-color: #ededed;
+		width: 50%;
+		margin: 1% 0;
+		transition: none;
+	}
+	nav ul li {
+		background-color: #ededed;
+		display:block;
+		float:none;
+		border:none;
+	}
+	div.menu_bar {
+		display:block;
+		width:100%;
+
+		z-index: 999999999;
+		position: fixed;
+	}
+	.menu_bar .bt-menu {
+		color:#000;
+		display:block;
+		background:#fff;
+		color:#fff;
+		padding: 5px;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	.menu_bar span {
+		color: #000;
+		height: 10px;
+	}
+	header img {
+		width: 90%;
+		margin: 35% 5% 50% 5%;
+	}
+	.nosotros, .works, .contacto {
+		width: 90%;
+		margin: 0 5%;
+	}
+	.nosotros .linea, .works .linea, .contacto .linea {
+		display: none;
+	}
+	.nosotros h1, .works h1, .contacto h1 {
+		color: #AFB500;
+		width: 100%;
+		margin: 15% 0;
+	}
+	.nosotros p {
+		clear: both;
+		font-family: Merri;
+		margin-top: 5%; 
+	}
+	section.works {
+		height: 1100px;
+	}
+	div.container {
+		width: 100%;
+		margin: 0;
+	}
+	section.worksImg  {
+		background-repeat: no-repeat;
+		width: 90%;
+		margin:0 5%;
+	}
+	section.img1, section.img1:hover {
+		background-image: url("../img/mercedario1.png");
+		-webkit-background-image: url("../img/mercedario1.png");
+	}
+	section.img2 {
+		background-image: url("../img/sociales.png");
+		-webkit-background-image: url("../img/sociales.png");
+	}
+	section.img3 {
+		background-image: url("../img/newport.jpg");
+		-webkit-background-image: url("../img/newport.jpg");
+	}
+	.contacto p {
+		width: 90%;
+		margin: 5% auto;
+		clear: both;
+	}
+	.contacto ul {
+		list-style-type: none;
+		width: 50%;
+		margin: 5% 25% 15% 25%;
+	}
+	.contacto ul li {
+		text-align: center;
+		width: 20%;
+		margin-bottom: 20%;
+		padding: 5px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.contacto ul li a {
+		text-decoration: none;
+		color: #000;
+		transition: all 0.3s ease;
+	}
+}
