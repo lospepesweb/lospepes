@@ -14,15 +14,14 @@ $header .= "Content-Type: text/plain";
 
 if(mail($to, $subject, $contenido ,$header)){
 echo "<script>";
-echo " alert('Formulario enviado con éxito.');      
+echo " alert('Formulario enviado con éxito. En breve nos pondremos en contacto con vos. ¡MUCHAS GRACIAS!');      
         window.location.href='"."http://www.lospepesweb.com/"."';
       </script>";
-
 
 }
 } else {
 echo "<script>";
-echo " alert('Error! para enviar el formulario, tenés que completar todos los campos de texto.');      
+echo " alert('Error! para enviar el formulario tenés que completar TODOS los campos de texto.');      
         window.location.href='"."http://www.lospepesweb.com/#contacto"."';
       </script>";
 }
