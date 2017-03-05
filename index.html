@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="shortcut icon" type="image/x-icon" href="img/icono.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/icono.ico" />
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/menu_bar.js"></script>
     <script src="js/wow.js"></script>
@@ -58,7 +58,15 @@
 	<section class="contacto" id="contacto">
 		<span class="linea wow fadeIn"></span><h1 class="wow fadeIn">CONTACTO</h1><span class="linea wow fadeIn"></span>
 		<p class="wow fadeIn">Contanos un poco sobre tu idea y nosotros nos pondremos en contacto con vos.</p>
-		<p class="wow fadeIn"><strong>Email:</strong> hola@lospepesweb.com</p>
+		<form class="formContacto" method="post" action="send.php">
+			<p class="wow fadeIn">Nombre y Apellido</p>
+			<input class="wow fadeIn" name="nombre">
+			<p class="wow fadeIn">E-mail</p>
+			<input class="wow fadeIn" name="email"></td>
+			<p class="wow fadeIn">Comentario</p>
+			<textarea class="wow fadeIn" rows="8"cols="50" name="comentario"></textarea>
+			<td class="wow fadeIn" colspan="2"><input class="enviar wow fadeIn" type="submit" value="Enviar"></td>
+		</form>
 		<ul>
 			<li><a href="#." class="social wow fadeIn"><span class="icon-facebook"></span></a></li>
 			<li><a href="#." class="social wow fadeIn"><span class="icon-instagram"></span></a></li>
