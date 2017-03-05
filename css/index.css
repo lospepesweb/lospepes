@@ -105,10 +105,10 @@ section.img1:hover {
 	background-image: url("../img/mercedario1.png");
 }
 section.img2 {
-	background-image: url("../img/socialesBYC.jpg");
+	background-image: url("../img/socialesBYN.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	animation-delay: 1s;
+	animation-delay: 1.5s;
 	transition: background-image 0.3s ease;
 }
 section.img2:hover {
@@ -118,7 +118,7 @@ section.img3 {
 	background-image: url("../img/newportBYC.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	animation-delay: 1.5s;
+	animation-delay: 1s;
 	transition: background-image 0.3s ease;
 }
 section.img3:hover {
