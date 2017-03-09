@@ -320,4 +320,8 @@ section#contacto p.parrafo{
 		color: #000;
 		transition: all 0.3s ease;
 	}
+	.formContacto {
+		width: 80%;
+		margin: 0 10%;
+	}
 }
