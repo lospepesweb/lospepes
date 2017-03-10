@@ -123,7 +123,7 @@ section.img3 {
 	transition: background-image 0.3s ease;
 }
 section.img3:hover {
-	background-image: url("../img/newport.jpg");
+	background-image: url("../img/newport.png");
 }
 div.color:hover {
 	background-color: rgba(0,0,0,0);
