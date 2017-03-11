@@ -18,7 +18,7 @@ div.menu_bar {
 	display: none;
 }
 .nav {
-	animation-delay: 2.5s;
+	animation-delay: 1.5s;
 }
 nav ul {
 	list-style-type: none;
@@ -55,7 +55,7 @@ p {
 	width: 100%;
 }
 	.flecha1 {
-		animation-delay: 3s;
+		animation-delay: 2s;
 	}
 .nosotros, .works, .contacto {
 	width: 70%;
@@ -207,40 +207,51 @@ section#contacto p.parrafo{
 	.nav {
 		animation-delay: 0s;
 		z-index: 99999999999999999999999;
+		transition: none;
 	}
 	nav {
-		width:80%;
+		width:100%;
 		height:100%;
 		left:-100%;
 		top:25px;
 		margin:0;
 		position: fixed;
+		transition: none;
 	}
 	nav ul {
 		background-color: #ededed;
-		width: 50%;
-		margin: 1% 0;
+		width: 100%;
+		margin: 1% auto;
+		text-align: center;
 		transition: none;
 	}
 	nav ul li {
+		text-align: center;
 		background-color: #ededed;
 		display:block;
 		float:none;
 		border:none;
+		width: 100%;
+		transition: none;
+	}
+	nav ul li a {
+		width: 100%;
+		text-align: center;
+		transition: none;
 	}
 	div.menu_bar {
 		display:block;
 		width:100%;
-
 		z-index: 999999999;
 		position: fixed;
+		transition: none;
 	}
 	.menu_bar .bt-menu {
 		color:#000;
 		display:block;
-		background:#fff;
+		background:#ededed;
 		color:#fff;
-		padding: 5px;
+		padding: 10px;
 		text-decoration:none;
 		font-weight: bold;
 		font-size:25px;
