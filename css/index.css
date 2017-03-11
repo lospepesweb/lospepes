@@ -157,7 +157,7 @@ section.ali {
 section#contacto p.parrafo{
 	margin-bottom: 7.5%;
 }
-.contacto ul {
+/*.contacto ul {
 	list-style-type: none;
 	width: 20%;
 	margin: 5% auto;
@@ -174,7 +174,7 @@ section#contacto p.parrafo{
 }
 .contacto ul li a:hover {
 	color: #AFB500;
-}
+}*/
 .formContacto {
 	font-family: Merri;
 	width: 60%;
@@ -277,7 +277,7 @@ section#contacto p.parrafo{
 	.nosotros h1, .works h1, .contacto h1 {
 		color: #AFB500;
 		width: 100%;
-		margin: 15% 0;
+		margin: 18% 0 15% 0;
 	}
 	.nosotros p {
 		clear: both;
@@ -300,20 +300,22 @@ section#contacto p.parrafo{
 		background-image: url("../img/mercedario1.png");
 		-webkit-background-image: url("../img/mercedario1.png");
 	}
-	section.img2 {
+	section.img2, section.img2:hover {
 		background-image: url("../img/sociales.png");
 		-webkit-background-image: url("../img/sociales.png");
 	}
-	section.img3 {
+	section.img3, section.img3:hover {
 		background-image: url("../img/newport.svg");
 		-webkit-background-image: url("../img/newport.svg");
 	}
 	.contacto p {
-		width: 90%;
-		margin: 5% auto;
+		width: 100%;
 		clear: both;
 	}
-	.contacto ul {
+	.formContacto input, .formContacto textarea {
+		line-height: 1.5rem;
+	}
+	/*.contacto ul {
 		list-style-type: none;
 		width: 50%;
 		margin: 5% 25% 15% 25%;
@@ -330,9 +332,12 @@ section#contacto p.parrafo{
 		text-decoration: none;
 		color: #000;
 		transition: all 0.3s ease;
-	}
+	}*/
 	.formContacto {
-		width: 80%;
-		margin: 0 10%;
+		width: 90%;
+		margin: 0 5%;
+	}
+	.formContacto input.enviar {
+		margin-bottom: 10%;
 	}
 }
