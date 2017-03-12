@@ -57,6 +57,22 @@ p {
 	.flecha1 {
 		animation-delay: 2s;
 	}
+.ir-arriba {
+    display: none;
+    background: #ededed;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-image: url(../img/flecha.png);
+
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+}
+.ir-arriba {
+    z-index: 9999 !important;
+}
 .nosotros, .works, .contacto {
 	width: 70%;
 	margin: 15%;
