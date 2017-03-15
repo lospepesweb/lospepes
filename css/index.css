@@ -74,10 +74,16 @@ p {
     z-index: 9999 !important;
 }
 
-.nosotros, .works, .contacto {
+.nosotros, .works /*.contacto*/ {
 	width: 70%;
 	margin: 15%;
 }
+
+.contacto {
+	width: 70%;
+	margin: 15% 15% 5% 15%;
+}
+
 .nosotros .linea, .works .linea, .contacto .linea {
 	margin: 1.5% 0;
 	float: left;
@@ -214,7 +220,7 @@ section#contacto p.parrafo{
 		border: 1px solid rgba(175,181,0,0.7);
 		line-height: 1.5rem;
 		width: 20%;
-		margin: 5% 40% 0 40%;
+		margin: 5% 40% 0% 40%;
 		transition: all 0.3s ease;
 	}
 	.formContacto input.enviar:hover {
