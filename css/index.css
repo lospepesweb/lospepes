@@ -117,7 +117,7 @@ p {
 	list-style-type: none;
 	width: 25%;
 	margin-left: 4.165%;
-		margin-right: 4.165%;
+	margin-right: 4.165%;
 	float: left;
 
 }
@@ -129,7 +129,7 @@ p {
 	margin-bottom: 10%;
 }
 .servicios ul li .iconoServicios div {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(120,120,120,1);
 	width: 100px;
 	height: 100px;
 	left: 0;
