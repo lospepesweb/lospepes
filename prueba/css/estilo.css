@@ -1,0 +1,59 @@
+.formContacto {
+    font-family: Merri;
+    width: 60%;
+    margin: 0 20%;
+}
+    .formContacto p {
+        text-align: left;
+        width: 100%;
+    }
+    .formContacto input, .formContacto textarea {
+        font-family: Merri;
+        line-height: 1rem;
+        width: 100%;
+        resize: none;
+        border: 1px solid #AFB500;
+        border-radius: 2px;
+    
+    }
+    .formContacto input.enviar {
+        background-color: rgba(175,181,0,0.7);
+        border: 1px solid rgba(175,181,0,0.7);
+        line-height: 1.5rem;
+        width: 20%;
+        margin: 5% 40% 0% 40%;
+        transition: all 0.3s ease;
+    }
+    .formContacto input.enviar:hover {
+        background-color: rgba(175,181,0,1);
+    }
+
+    .form-input {
+    display: block;
+    height: 24px;
+    padding: 6px 10px;
+    margin-bottom: 20px;
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-radius:         8px;
+    -moz-box-shadow:    inset 0 0 1px rgba(0, 0, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow:         inset 0 0 1px rgba(0, 0, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.1);
+    background-color: #646464;
+    -moz-box-shadow:    inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.7);
+    box-shadow:         inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.7);
+    behavior: url(PIE.htc);
+    width: 320px;
+    background: #ffffff;
+    border: 5px solid #dbdbdb;
+    color: #999;
+    position: relative;
+}
+    
+.mal {
+    background-color: #FCA7A7;
+}
+    /*.mal {
+    background: #AFB500;
+    border: 25px solid #ff9197;
+}*/

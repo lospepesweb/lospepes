@@ -129,7 +129,7 @@ p {
 	margin-bottom: 10%;
 }
 .servicios ul li .iconoServicios div {
-	background-color: rgba(120,120,120,1);
+	/*background-color: rgba(120,120,120,1);*/
 	width: 100px;
 	height: 100px;
 	left: 0;
@@ -146,9 +146,16 @@ p {
 	font-family: Merri;
 	font-size: 0.8rem;
 }
-
-
-
+.responsive {
+	background-image: url("../img/rd.png");
+}
+.aMedida {
+	background-image: url("../img/amedida.png");
+}
+.oUsuario{
+	
+	background-image: url("../img/oUsuario.png");
+}
 
 
 
