@@ -22,7 +22,7 @@ div.menu_bar {
 }
 nav ul {
 	list-style-type: none;
-	width: 50%;
+	width: 60%;
 	margin: 1% auto;
 }
 nav ul li {
@@ -31,7 +31,7 @@ nav ul li {
 	border-top: 2px solid #000;
 	border-bottom: 2px solid #000;
 	float: left;
-	width: 25%;
+	width: 20%;
 	padding: 1rem;
 }
 nav ul li a {
@@ -105,13 +105,8 @@ p {
 	line-height: 2rem;
 	margin-top: 5%; 
 }
-
-
-
-
-
 .servicios ul {
-		margin-bottom: 15%;
+	margin-bottom: 20%;
 }
 .servicios ul li {
 	list-style-type: none;
@@ -119,7 +114,15 @@ p {
 	margin-left: 4.165%;
 	margin-right: 4.165%;
 	float: left;
-
+}
+.servicios ul li:nth-child(1){
+	animation-delay: 0.8s;
+}
+.servicios ul li:nth-child(2){
+	animation-delay: 0.3s;
+}
+.servicios ul li:nth-child(3){
+	animation-delay: 1.3s;
 }
 .servicios ul li .iconoServicios {
 	/*background-color: red;*/
@@ -156,12 +159,6 @@ p {
 	
 	background-image: url("../img/oUsuario.png");
 }
-
-
-
-
-
-
 .works {
 	height: 500px
 }
@@ -179,7 +176,7 @@ section.worksImg {
 section.img1 {
 	background-image: url("../img/mercedarioBYN.png");
 	background-position: center;
-	animation-delay: 0.5s;
+	animation-delay: 0.3s;
 	transition: background-image 0.3s ease;
 }
 section.img1:hover {
@@ -189,7 +186,7 @@ section.img2 {
 	background-image: url("../img/socialesBYN.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	animation-delay: 1.5s;
+	animation-delay: 1.3s;
 	transition: background-image 0.3s ease;
 }
 section.img2:hover {
@@ -199,7 +196,7 @@ section.img3 {
 	background-image: url("../img/newportBYN.svg");
 	background-position: center;
 	background-repeat: no-repeat;
-	animation-delay: 1s;
+	animation-delay: 0.8s;
 	transition: background-image 0.3s ease;
 }
 section.img3:hover {
@@ -347,14 +344,14 @@ section#contacto p.parrafo{
 		width: 90%;
 		margin: 35% 5% 50% 5%;
 	}
-	.nosotros, .works, .contacto {
+	.nosotros, .servicios, .works, .contacto {
 		width: 90%;
 		margin: 0 5%;
 	}
-	.nosotros .linea, .works .linea, .contacto .linea {
+	.nosotros .linea, .servicios .linea, .works .linea, .contacto .linea {
 		display: none;
 	}
-	.nosotros h1, .works h1, .contacto h1 {
+	.nosotros h1, .servicios h1, .works h1, .contacto h1 {
 		color: #AFB500;
 		width: 100%;
 		margin: 18% 0 15% 0;
@@ -363,6 +360,41 @@ section#contacto p.parrafo{
 		clear: both;
 		font-family: Merri;
 		margin-top: 5%; 
+	}
+	.servicios ul li {
+		width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+		float: none;
+	}
+	.servicios ul li:nth-child(1){
+		animation-delay: 0s;
+	}
+	.servicios ul li:nth-child(2){
+		animation-delay: 0s;
+	}
+	.servicios ul li:nth-child(3){
+		animation-delay: 0s;
+	}
+	.servicios ul li .iconoServicios {
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 3%;
+	}
+	.servicios ul li .iconoServicios div {
+		width: 100%;
+		left: 0;
+		right: 0;
+	}
+	.servicios ul li h2 {
+		margin-bottom: 3%;
+	}
+	.servicios ul li p {
+		margin-bottom: 15%;
+	}
+	.responsive, .aMedida, .oUsuario {
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 	section.works {
 		height: 1100px;
@@ -379,14 +411,17 @@ section#contacto p.parrafo{
 	section.img1, section.img1:hover {
 		background-image: url("../img/mercedario1.png");
 		-webkit-background-image: url("../img/mercedario1.png");
+		animation-delay: 0s;
 	}
 	section.img2, section.img2:hover {
 		background-image: url("../img/sociales.png");
 		-webkit-background-image: url("../img/sociales.png");
+		animation-delay: 0s;
 	}
 	section.img3, section.img3:hover {
 		background-image: url("../img/newport.svg");
 		-webkit-background-image: url("../img/newport.svg");
+		animation-delay: 0s;
 	}
 	.contacto p {
 		width: 100%;
