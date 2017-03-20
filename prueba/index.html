@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>prueba formulario</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<script type="text/javascript" src="js/form.js"></script>
+
 </head>
 <body>
 		
@@ -15,7 +15,14 @@
 			<input type="email" class="wow fadeIn" name="email" onblur="vercaja(this); validaremail(this)"></td>
 			<p class="wow fadeIn">Comentario:</p>
 			<textarea class="wow fadeIn" rows="8"cols="50" name="comentario" onblur="vercaja(this)"></textarea>
-			<td class="wow fadeIn" colspan="2"><input class="enviar wow fadeIn" type="submit" value="Enviar"></td>
+			<div class="ultimo">
+				<img src="img/enviando.gif" class="enviando hide" />	
+				<div class="mensaje"></div>
+				<td class="wow fadeIn" colspan="2"><input class="enviar wow fadeIn" type="submit" id="btn" value="Enviar"></td>
+			</div>
+
 		</form>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/formu.js"></script>
 </body>
 </html>

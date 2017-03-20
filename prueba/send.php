@@ -28,9 +28,9 @@ $mensaje="
 </table>
 ";
 @mail($to,$subject,$mensaje,$header); 
-    echo "<script>";
-	echo "window.location.href='"."http://www.lospepesweb.com/"."';
-      </script>";
+//  echo "<script>";
+//	echo "window.location.href='"."http://www.lospepesweb.com/"."';
+//       </script>";
 
 }
 ?>

@@ -1,0 +1,38 @@
+
+.form-contacto {
+	font-family: Merri;
+	width: 60%;
+	margin: 0 20%;
+}
+	.form-contacto p {
+		text-align: left;
+		width: 100%;
+	}
+	.form-contacto input, .form-contacto textarea {
+		font-family: Merri;
+		line-height: 1rem;
+		width: 100%;
+		resize: none;
+		border: 1px solid #AFB500;
+		border-radius: 2px;
+	}
+	.form-contacto input.enviar {
+		background-color: rgba(175,181,0,0.7);
+		border: 1px solid rgba(175,181,0,0.7);
+		line-height: 1.5rem;
+		width: 20%;
+		margin: 5% 40% 0% 40%;
+		transition: all 0.3s ease;
+	}
+	.form-contacto input.enviar:hover {
+		background-color: rgba(175,181,0,1);
+	}
+	.oculto{
+		display: none;
+	}
+	
+	#enviando{
+		display: none;
+		width: 16px;
+		height: 16px;
+	}

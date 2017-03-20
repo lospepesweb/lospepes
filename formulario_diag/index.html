@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba formulario</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+	
+	<form class="form-contacto" method="post" action="send.php">
+		<p class="wow fadeIn">Nombre:</p>
+		<input type="text" class="wow fadeIn" name="nombre" id="nombre" required>
+		<p class="wow fadeIn">E-mail:</p>
+		<input type="email" class="wow fadeIn" name="email" id="email" required></td>
+		<p class="wow fadeIn">Comentario:</p>
+		<textarea class="wow fadeIn" rows="8"cols="50" name="comentario" id="comentario" required></textarea>
+		<td class="wow fadeIn" colspan="2"><input class="enviar wow fadeIn" type="submit" value="Enviar"></td>
+		
+		<div id="enviando">
+    		<img src="ajax.gif" />
+    	</div>
+		
+		<div id = "dialog" title = "Formulario enviado:">
+  			<p>En breve nos pondremos en contacto con vos.</p>
+  		</div>
+
+	</form>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="formu.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
+</html>
