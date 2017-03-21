@@ -116,10 +116,10 @@ p {
 	float: left;
 }
 .servicios ul li:nth-child(1){
-	animation-delay: 0.8s;
+	animation-delay: 0.3s;
 }
 .servicios ul li:nth-child(2){
-	animation-delay: 0.3s;
+	animation-delay: 0.8s;
 }
 .servicios ul li:nth-child(3){
 	animation-delay: 1.3s;
