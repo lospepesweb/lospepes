@@ -280,6 +280,12 @@ section#contacto p.parrafo{
 	.formContacto input.enviar:hover {
 		background-color: rgba(175,181,0,1);
 	}
+	#enviando{
+		display: none;
+		width: 16px;
+		height: 16px;
+	}
+
 @media screen and (max-width: 850px) {
 	.nav {
 		animation-delay: 0s;

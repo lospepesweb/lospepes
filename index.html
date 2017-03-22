@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/sweetalert2.css">
 	<!--<link rel="shortcut icon" type="image/x-icon" href="img/p.svg" />-->
 	<link rel="icon" type="image/png" sizes="16x12" href="img/p.png">
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
@@ -104,7 +105,7 @@
 	<section class="contacto" id="contacto">
 		<span class="linea wow fadeIn"></span><h1 class="wow fadeIn">CONTACTO</h1><span class="linea wow fadeIn"></span>
 		<p class="parrafo wow fadeIn">Contanos un poco sobre tu idea y nosotros nos pondremos en contacto con vos.</p>
-		<form class="formContacto" method="post" action="send.php">
+		<!--<form class="formContacto" method="post" action="send.php">
 			<p class="wow fadeIn">Nombre:</p>
 			<input class="wow fadeIn" name="nombre">
 			<p class="wow fadeIn">E-mail:</p>
@@ -112,7 +113,21 @@
 			<p class="wow fadeIn">Comentario:</p>
 			<textarea class="wow fadeIn" rows="8"cols="50" name="comentario"></textarea>
 			<td class="wow fadeIn" colspan="2"><input class="enviar wow fadeIn" type="submit" value="Enviar"></td>
-		</form>
+		</form>-->
+			<form class="form-contacto" method="post" action="php/send.php">
+			<p class="wow fadeIn">Nombre:</p>
+			<input type="text" class="wow fadeIn" name="nombre" id="nombre" required>
+			<p class="wow fadeIn">E-mail:</p>
+			<input type="email" class="wow fadeIn" name="email" id="email" required></td>
+			<p class="wow fadeIn">Comentario:</p>
+			<textarea class="wow fadeIn" rows="8"cols="50" name="comentario" id="comentario" required></textarea>
+			<td class="wow fadeIn" colspan="2"><input class="enviar wow fadeIn" type="submit" value="Enviar"></td>
+			
+			<div id="enviando">
+	    		<img src="img/enviando.gif"/>
+	    	</div>
+			
+			</form>
 		<!-- SOCIAL MEDIA 
 		<ul>
 			<li><a href="#." class="social wow fadeIn"><span class="icon-facebook"></span></a></li>
@@ -138,7 +153,10 @@
 			}
 		});
 	});
-</script>
+	</script>
 <span class="ir-arriba"></span>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/formu.js"></script>
+<script src="js/sweetalert2.js"></script>
 </body>
 </html>
