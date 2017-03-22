@@ -252,16 +252,16 @@ section#contacto p.parrafo{
 .contacto ul li a:hover {
 	color: #AFB500;
 }*/
-.formContacto {
+.form-contacto {
 	font-family: Merri;
 	width: 60%;
 	margin: 0 20%;
 }
-	.formContacto p {
+	.form-contacto p {
 		text-align: left;
 		width: 100%;
 	}
-	.formContacto input, .formContacto textarea {
+	.form-contacto input, .form-contacto textarea {
 		font-family: Merri;
 		line-height: 1rem;
 		width: 100%;
@@ -269,7 +269,7 @@ section#contacto p.parrafo{
 		border: 1px solid #AFB500;
 		border-radius: 2px;
 	}
-	.formContacto input.enviar {
+	.form-contacto input.enviar {
 		background-color: rgba(175,181,0,0.7);
 		border: 1px solid rgba(175,181,0,0.7);
 		line-height: 1.5rem;
@@ -277,7 +277,7 @@ section#contacto p.parrafo{
 		margin: 5% 40% 0% 40%;
 		transition: all 0.3s ease;
 	}
-	.formContacto input.enviar:hover {
+	.form-contacto input.enviar:hover {
 		background-color: rgba(175,181,0,1);
 	}
 	#enviando{
@@ -433,7 +433,7 @@ section#contacto p.parrafo{
 		width: 100%;
 		clear: both;
 	}
-	.formContacto input, .formContacto textarea {
+	.form-contacto input, .form-contacto textarea {
 		line-height: 1.5rem;
 	}
 	/*.contacto ul {
@@ -454,11 +454,11 @@ section#contacto p.parrafo{
 		color: #000;
 		transition: all 0.3s ease;
 	}*/
-	.formContacto {
+	.form-contacto {
 		width: 90%;
 		margin: 0 5%;
 	}
-	.formContacto input.enviar {
+	.form-contacto input.enviar {
 		margin-bottom: 10%;
 	}
 }
