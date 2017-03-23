@@ -28,7 +28,7 @@ $(document).ready(function(){
     				.addClass('informa_texto')
     				.text('En breve nos pondremos en contacto con vos.'),
   				animation: false,
-  				customClass: 'animated tada',
+  				customClass: 'animated2 tada',
   				buttonsStyling: false,
   				confirmButtonClass: 'boton_confirma'
 				});
