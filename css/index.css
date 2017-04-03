@@ -85,7 +85,7 @@ p {
 }
 
 .nosotros .linea, .works .linea, .contacto .linea,  .servicios .linea {
-	margin: 1.5% 0;
+	margin: 1.5% auto;
 	float: left;
 	width: 30%;
 	height: 2px;
