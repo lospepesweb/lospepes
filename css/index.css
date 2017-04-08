@@ -14,6 +14,8 @@ html {
 	font-family: "Merri";
 	src: url("../fonts/Merriweather-Regular.ttf");
 }
+
+/*Navegación*/
 div.menu_bar {
 	display: none;
 }
@@ -45,6 +47,8 @@ nav ul li a {
 nav ul li a:hover {
 	color: #AFB500;
 }
+
+/*Imagen Los Pepes*/
 header img {
 	width: 50%;
 	margin: 5% 25% 5% 25%;
@@ -81,12 +85,10 @@ p {
 	width: 70%;
 	margin: 15%;
 }
-
 .contacto {
 	width: 70%;
 	margin: 15% 15% 5% 15%;
 }
-
 .nosotros .linea, .works .linea, .contacto .linea,  .servicios .linea {
 	margin: 1.5% auto;
 	float: left;
@@ -237,24 +239,6 @@ section.ali {
 section#contacto p.parrafo{
 	margin-bottom: 7.5%;
 }
-/*.contacto ul {
-	list-style-type: none;
-	width: 20%;
-	margin: 5% auto;
-}
-.contacto ul li {
-	text-align: center;
-	width: 20%;
-	float: left;
-}
-.contacto ul li a {
-	text-decoration: none;
-	color: #000;
-	transition: all 0.3s ease;
-}
-.contacto ul li a:hover {
-	color: #AFB500;
-}*/
 .form-contacto {
 	font-family: Merri;
 	width: 60%;
