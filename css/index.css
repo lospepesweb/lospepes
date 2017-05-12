@@ -179,13 +179,14 @@ section.worksImg {
 	/*border-radius: 200px;*/
 }
 section.img1 {
-	background-image: url("../img/mercedarioBYN.png");
+	background-image: url("../img/mp.png");
 	background-position: center;
+	background-repeat: no-repeat;
 	animation-delay: 0.3s;
 	transition: background-image 0.3s ease;
 }
 section.img1:hover {
-	background-image: url("../img/mercedario1.png");
+
 }
 section.img2 {
 	background-image: url("../img/socialesBYN.png");
@@ -198,14 +199,16 @@ section.img2:hover {
 	background-image: url("../img/sociales.png");
 }
 section.img3 {
-	background-image: url("../img/newportBYN.svg");
+	background-image: url("../img/pcBYN.png");
 	background-position: center;
 	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
 	animation-delay: 0.8s;
 	transition: background-image 0.3s ease;
 }
 section.img3:hover {
-	background-image: url("../img/newport.svg");
+	background-image: url("../img/pc.png");
 }
 div.color:hover {
 	background-color: rgba(0,0,0,0);
@@ -255,6 +258,7 @@ section#contacto p.parrafo{
 		resize: none;
 		border: 1px solid #AFB500;
 		border-radius: 2px;
+		outline: 0px;
 	}
 	.form-contacto input.enviar {
 		background-color: rgba(175,181,0,0.7);
@@ -263,6 +267,7 @@ section#contacto p.parrafo{
 		width: 20%;
 		margin: 5% 40% 0% 40%;
 		transition: all 0.3s ease;
+		outline: 0px;
 	}
 	.form-contacto input.enviar:hover {
 		background-color: rgba(175,181,0,1);
