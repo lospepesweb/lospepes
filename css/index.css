@@ -413,7 +413,7 @@ section#contacto p.parrafo{
 		margin:0 5%;
 	}
 	section.img1, section.img1:hover {
-		background-image: url("../img/mercedario1.png");
+		background-image: url("../img/mp.jpg");
 		-webkit-background-image: url("../img/mercedario1.png");
 		animation-delay: 0s;
 	}
@@ -423,8 +423,8 @@ section#contacto p.parrafo{
 		animation-delay: 0s;
 	}
 	section.img3, section.img3:hover {
-		background-image: url("../img/newport.svg");
-		-webkit-background-image: url("../img/newport.svg");
+		background-image: url("../img/pc.png");
+		-webkit-background-image: url("../img/pc.png");
 		animation-delay: 0s;
 	}
 	.contacto p {
