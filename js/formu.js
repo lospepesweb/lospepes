@@ -20,7 +20,7 @@ $(document).ready(function(){
   				imageUrl: "thumbs-up.jpg"
 			});*/
 			swal({
-  				title: '<span class="informa_titulo">Formulado enviado</span>',
+  				title: '<span class="informa_titulo">Formulario enviado</span>',
   				imageUrl: 'img/thumbs-up.jpg',
   				imageWidth: 300,
   				imageHeight: 300,

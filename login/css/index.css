@@ -32,12 +32,24 @@ input.input {
 	background-color: transparent;
 	color: #fff;
 	border-radius: 20px;
-	outline:0px;
+	/*outline:0px;*/
 }
-input.input:hover,
+/*input.input:hover,
 input.input:focus {
 	outline-color: #fff;
+}*/
+/*input {
+	outline:rgba(0,0,0,0);
+	border: 2px solid rgba(175,181,0,0.7);
+}*/
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+	/*outline:0px;*/
+	border: 2px solid rgba(175,181,0,0.7);
+	box-shadow: none;
 }
+
 input.button {
 	font-family: JosefinSemiBold;
 	background-color: #000;
