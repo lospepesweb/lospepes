@@ -24,8 +24,8 @@ div.formu {
 	margin-top: 70px;
 }
 @media (max-width: 768px){
-	body {
-		background-image: url("../img/bg.jpg");
+	div.formu {
+		margin-bottom: 200px;
 	}
 }
 input.input {
