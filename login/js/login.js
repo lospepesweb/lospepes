@@ -1,3 +1,6 @@
+(function(){
+
+
 // -- COMPORTAMIENTO DEL BOTÓN ENTRAR -- //
 
 // VARIABLES
@@ -41,9 +44,6 @@ boton.addEventListener("click", entrar);
 
 
 
-
-
-
 // -- CENTRADO VERTICAL DEL FORMULARIO -- //
 
 // FUNCIONES
@@ -59,3 +59,5 @@ var seteo = function(){
 // EVENTOS
 seteo();
 window.addEventListener("resize", seteo);
+
+}())
