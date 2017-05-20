@@ -21,46 +21,35 @@ body {
 div.formu {
 	background-color: rgba(0,0,0,0.8);
 	border-radius: 5px;
-	margin-top: 70px;
-}
-@media (max-width: 768px){
-	div.formu {
-		margin-bottom: 200px;
-	}
 }
 input.input {
 	background-color: transparent;
 	color: #fff;
+	border-color: #fff;
 	border-radius: 20px;
-	/*outline:0px;*/
+	box-shadow: none;
+	transition: all 0.5s ease;
 }
-/*input.input:hover,
-input.input:focus {
-	outline-color: #fff;
-}*/
-/*input {
-	outline:rgba(0,0,0,0);
-	border: 2px solid rgba(175,181,0,0.7);
-}*/
-
 input[type="text"]:focus,
 input[type="password"]:focus {
-	/*outline:0px;*/
-	border: 2px solid rgba(175,181,0,0.7);
-	box-shadow: none;
+	border-color: transparent;
+	box-shadow: 1px 1px 10px rgba(175,181,0,0.7), 
+				-1px -1px 10px rgba(175,181,0,0.7);
 }
-
 input.button {
 	font-family: JosefinSemiBold;
 	background-color: #000;
 	color: #fff;
 	border-radius: 20px;
 	margin-top: 50px;
-	transition: all 0.3s ease;
+	box-shadow: none;
+	transition: all 0.5s ease;
 }
 input.button:hover,
 input.button:focus,
 input.button:active {
-	background-color: #fff;
-	color: #000;
+	color: rgba(175,181,0,1);
+	border-color: transparent;
+	box-shadow: 1px 1px 10px rgba(175,181,0,0.7), 
+				-1px -1px 10px rgba(175,181,0,0.7);
 }
