@@ -7,6 +7,7 @@
 var boton = document.getElementById("button");
 var usuarioInput = document.getElementById("usuario");
 var passInput = document.getElementById("pass");
+var enviarFormulario = document.getElementById("login");
 
 // FUNCIONES
 // Compruebo si el input esta vacío, agrego shake y luego saco shake
@@ -36,7 +37,8 @@ var entrar = function(){
 		setTimeout(comprobarInput, 500);
 		return false
 	}
-	window.location = "todolist/index.html";
+	//window.location = "todolist/index.html";
+	enviarFormulario.submit();
 };
 
 // EVENTOS

@@ -8,19 +8,18 @@
 }
 body {
 	font-family: Josefin;
-	font-size: 100px;
 	background-image: url("../img/bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
 }
-.logo img {
-	width: 100%;
-	margin-bottom: 50px;
-}
 div.formu {
 	background-color: rgba(0,0,0,0.8);
 	border-radius: 5px;
+}
+.logo img {
+	width: 100%;
+	margin-bottom: 50px;
 }
 input.input {
 	background-color: transparent;
@@ -41,7 +40,7 @@ input.button {
 	background-color: #000;
 	color: #fff;
 	border-radius: 20px;
-	margin-top: 50px;
+	margin-top: 40px;
 	box-shadow: none;
 	transition: all 0.5s ease;
 }
@@ -52,4 +51,7 @@ input.button:active {
 	border-color: transparent;
 	box-shadow: 1px 1px 10px rgba(175,181,0,0.7), 
 				-1px -1px 10px rgba(175,181,0,0.7);
+}
+.error {
+	color: red;
 }
