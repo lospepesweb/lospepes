@@ -1,7 +1,4 @@
 /* Main form wrapper */
-.container {
-	background: rgb(62,70,70);
-}
 .fs-form-wrap {
 	position: relative;
 	width: 100%;
@@ -19,9 +16,16 @@
 	top: 0;
 	left: 0;
 	margin: 0;
-	padding: 70px;
-	padding-left: 5%;
+	padding: 35px;
+	padding-top: 100px;
 	width: 100%;
+	font-size: 32px;
+}
+@media screen and (max-width: 768px){
+	.fs-title{
+		font-size: 22px;
+		margin-top: 50px;
+	}
 }
 
 .fs-title h1 {
@@ -32,7 +36,7 @@
 .fs-form {
 	position: relative;
 	text-align: left;
-	font-size: 2.5em;
+	font-size: 32px;
 }
 
 .no-js .fs-form {
@@ -41,10 +45,9 @@
 
 /* Views (fullscreen and overview)*/
 .fs-form-full {
-	top: 32%;
-	margin: 0 auto;
-	margin-left: 5%;
-	width: 70%;
+	top: 35%;
+	margin: 0 0 0 40px;
+	width: 100%;
 }
 
 .fs-form-full,
@@ -56,16 +59,16 @@
 	padding: 2.5em 30% 6em;
 	width: 100%;
 	height: 100%;
-	background: rgb(62,70,70);
+	background-image: url(../../img/fondoGris.jpg);
 	color: #fff;
 	font-size: 1.2em;
 }
 
 .fs-form-overview .fs-fields::before {
 	display: block;
-	margin-bottom: 2.5em;
+	margin-bottom: 0em;
 	color: #fff;
-	content: 'Revisar & Enviar';
+	content: 'Revisar y enviar';
 	font-weight: 700;
 	font-size: 1.85em;
 }
@@ -202,9 +205,9 @@ button.fs-continue,
 	text-align: center;
 	font-weight: 700;
 	font-style: italic;
-	font-size: 14px;
+	font-size: 22px;
 	font-family: Georgia, serif;
-	line-height: 20px;
+	line-height: 22px;
 	cursor: pointer;
 	pointer-events: auto;
 }
@@ -216,7 +219,7 @@ button.fs-continue,
     padding: 0 0 10px;
     min-width: 200px;
 	content: attr(data-info);
-	font-size: 0.4em;
+	font-size: 0.5em;
 	color: #6a7b7e;
     opacity: 0;
     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -247,12 +250,12 @@ button.fs-continue,
 	padding: 0 0 0.15em;
 	width: 100%;
 	border: none;
-	border-bottom: 2px solid rgba(0,0,0,0.2);
+	border-bottom: 2px solid rgba(255,255,255,0.1);
 	background-color: transparent;
 	color: #fff;
-	text-overflow: ellipsis;
+	/*text-overflow: ellipsis;*/
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 32px;
 	border-radius: 0;
 }
 
@@ -265,19 +268,19 @@ button.fs-continue,
 	color: rgba(0,0,0,0.5);
 }
 
-.fs-fields [required] {
+/*.fs-fields [required] {
 	background-image: url(../img/abacusstar.svg);
 	background-position: top right;
 	background-size: 18px;
 	background-repeat: no-repeat;
-}
+}*/
 
 .fs-fields input:focus {
-	background-color: rgb(62,70,70); /* Fixes chrome bug with placeholder */
+	background-color: transparent; /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input:focus {
-	background-color: rgb(62,70,70); /* Fixes chrome bug with placeholder */
+	background-color: transparent; /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input {
@@ -366,7 +369,7 @@ button.fs-continue,
 }
 
 .fs-fields .fs-radio-custom input[type="radio"]:checked + label {
-	color: #fff;
+	color: #fffed8;
 }
 
 .fs-form-overview .fs-fields .fs-radio-custom input[type="radio"]:checked + label {
@@ -381,7 +384,7 @@ button.fs-continue,
 	background-color: transparent;
 	color: #fff;
 	font-weight: 700;
-	font-size: 0.85em;
+	font-size: 32px;
 	resize: none;
 }
 
@@ -400,7 +403,7 @@ button.fs-continue,
 }
 
 .fs-form-overview .fs-fields textarea:focus {
-	background: rgb(62,70,70);
+	background: transparent;
 }
 
 .fs-form div.cs-select.cs-skin-boxes {
@@ -437,22 +440,22 @@ button.fs-continue,
 /* placeholder */
 .fs-fields input::-webkit-input-placeholder,
 .fs-fields textarea::-webkit-input-placeholder {
-	color: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.1);
 }
 
 .fs-fields input:-moz-placeholder,
 .fs-fields textarea:-moz-placeholder {
-	color: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.1);
 }
 
 .fs-fields input::-moz-placeholder,
 .fs-fields textarea::-moz-placeholder {
-	color: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.1);
 }
 
 .fs-fields input:-ms-input-placeholder,
 .fs-fields textarea:-ms-input-placeholder {
-	color: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,0.1);
 }
 
 /* Hide placeholder when focused in Webkit browsers */
@@ -491,7 +494,7 @@ button.fs-continue,
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	background-color: rgb(62,70,70);
+	background-color: rgba(0,0,0,0.5);
 	content: '';
 	text-indent: 0;
 	-webkit-backface-visibility: hidden;
@@ -520,18 +523,19 @@ button.fs-continue,
 	top: 0;
 	width: 0%;
 	height: 0.5em;
-	background: rgb(229,80,63);
+	background: #e5503f;
 	-webkit-transition: width 0.3s ease-in-out;
 	transition: width 0.3s ease-in-out;
 }
 
 /* Number indicator */
 .fs-numbers {
+	display: none;
 	position: absolute;
 	top: 0;
 	right: 0;
 	overflow: hidden;
-	color: rgba(0,0,0,0.0);
+	color: rgba(0,0,0,0.4);
 	margin: 40px;
 	width: 2em;
 	font-weight: 700;
@@ -629,36 +633,36 @@ button.fs-continue,
 /* Continue button and submit button */
 button.fs-submit,
 button.fs-continue {
-	padding: 0.6em 1.5em;
-	border: 3px solid #232529;
+	padding: 3px 20px;
+	border: 3px solid rgba(255,255,255,0.5);
 	border-radius: 40px;
 	font-weight: 700;
-	color: rgba(0,0,0,0.4);
+	color: rgba(255,255,255,0.5);
 }
 
 .fs-form-overview .fs-submit,
 .no-js .fs-form .fs-submit  {
 	display: block;
-	float: right;
+	/*float: right;*/
 }
 
 .fs-form-overview .fs-submit {
-	border-color: #232529;
-	color: #232529;
+	border-color: rgba(255,255,255,0.5);
+	color: rgba(255,255,255,0.5);
 }
 
 button.fs-continue {
 	position: absolute;
-	right: 0;
+	left: 40px;
 	bottom: 0;
-	margin: 0 40px 60px 0;
-	font-size: 1.25em;
+	margin: 0 0 60px 0;
+	font-size: 28px;
 }
 
 button.fs-submit:hover,
 button.fs-submit:focus,
 button.fs-continue:hover {
-	background: #232529;
+	background: rgba(255,255,255,0.1);
 	color: #fff;
 }
 
@@ -670,21 +674,21 @@ button.fs-continue:hover {
 	line-height: 3;
 	text-align: center;
 	background: transparent;
-	color: rgba(0,0,0,0.3);
-	content: 'or press ENTER';
-	font-size: 0.65em;
+	color: rgba(255,255,255,0.5);
+	content: 'o presionar ENTER';
+	font-size: 16px;
 	pointer-events: none;
 }
 
 /* Error message */
 .fs-message-error {
-	position: absolute;
-	bottom: 75%;
-	left: 40%;
+	display: inline-block;
+	position: relative;
+	left: 203px;
+	margin-top: 175px;
 	z-index: 800;
 	max-width: 960px;
-	width: 70%;
-	color: rgb(229,80,63);
+	color: #e5503f;
 	font-weight: 700;
 	font-size: 1em;
 	opacity: 0;
@@ -804,6 +808,11 @@ input[type=text]::-ms-clear {
 }
 
 /* Adjust form for smaller screens */
+@media screen and (max-width: 1115px) {
+	.fs-fields input {
+		width: 75%;
+	}
+}
 @media screen and (max-width: 52.5em) {
 	body {
 		min-height: 500px;
@@ -815,23 +824,24 @@ input[type=text]::-ms-clear {
 
 	.fs-form {
 		top: 6em;
-		/*right: 2em;*/
-		left: -5%;
-		padding: 0 3.75em 0 1em;
+		right: 2em;
+		left: 0;
+		padding: 0 50px 0 0px;
 		width: auto;
-		font-size: 2em;
+		font-size: 22px;
 	}
-
+	.fs-fields input {
+		width: 100%;
+	}
 	.fs-form.fs-form-overview {
 		top: 0;
 		right: 0;
-		padding: 1.5em 1em 8em 1em;
+		padding: 1.5em 1em 8em 0;
 		font-size: 1.5em;
 	}
 
 	.fs-title {
 		padding: 20px;
-		padding-left: 5%;
 	}
 
 	.fs-numbers {
@@ -841,32 +851,11 @@ input[type=text]::-ms-clear {
 	.fs-nav-dots {
 		right: 25px;
 	}
-
-	button.fs-continue {
-		right: 20px;
-		bottom: 20px;
-		margin: 0;
-		padding: 50px 0 0 50px;
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		font-size: 2em;
-	}
-
-	button.fs-continue::before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		content: '\27A1';
-		text-align: center;
-		font-size: 1em;
-		line-height: 50px;
-	}
-
 	.fs-continue::after {
 		content: '';
+	}
+	.fs-nav-dots{
+		display: none;
 	}
 
 	button.fs-submit {
@@ -877,7 +866,7 @@ input[type=text]::-ms-clear {
 	.fs-message-error {
 		bottom: 1.75em;
 		left: 0;
-		padding: 0 90px 0 0;
+		padding: 0 90px 0 2em;
 		width: 100%;
 		font-size: 1.5em;
 		-webkit-transform: translate3d(0,-5px,0);
