@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Light";
+  src: url("../fonts/TheSans-3-LightIta.otf"); }
+@font-face {
+  font-family: "semiBold";
+  src: url("../fonts/TheSans-6-SemiBold.otf"); }
+@font-face {
+  font-family: "Bold";
+  src: url("../fonts/TheSansBold.otf"); }
+.btn-naranja {
+  background: #e5503f;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  border-radius: 40px;
+  color: #fff;
+  font-family: "Bold"; }
+  .btn-naranja:hover, .btn-naranja:active {
+    background: rgba(229, 80, 63, 0.8);
+    box-shadow: none;
+    color: #fff; }
+  .btn-naranja:focus {
+    appearence: none;
+    background: #e5503f;
+    box-shadow: none;
+    color: #fff; }
+
+.btn-formu {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  border-radius: 40px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "semiBold";
+  font-size: 24px;
+  transition: all ease 0.2s; }
+  .btn-formu:hover, .btn-formu:focus {
+    color: #fff;
+    background: #e5503f;
+    border: 2px solid #e5503f;
+    box-shadow: none; }
+
+.modal-content {
+  background-image: url("../img/fondoGris.jpg"); }
+
+.modal-header, .modal-footer {
+  border: none; }
+
+.modal-footer {
+  text-align: left; }
+
+.modal-title {
+  color: #fff;
+  font-family: "Bold";
+  font-size: 48px; }
+
+.formContacto label {
+  color: #fff;
+  font-family: "semiBold";
+  font-size: 24px; }
+.formContacto input, .formContacto textarea {
+  color: #fff;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  font-family: "semiBold";
+  resize: none;
+  transition: all ease 0.8s; }
+  .formContacto input:hover, .formContacto input:focus, .formContacto textarea:hover, .formContacto textarea:focus {
+    border-bottom: 1px solid #fff !important;
+    box-shadow: none; }
+
+/*# sourceMappingURL=estilos.css.map */

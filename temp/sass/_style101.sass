@@ -1,1 +1,33 @@
 // -- ESTILOS BASICOS PARA TODO EL SITIO -- //
+
+// -- Botones -- //
+$btn-bordes: 40px
+
+.btn-naranja
+	background: $naranja
+	+border-radius($btn-bordes)
+	color: $blanco
+	font-family: $bold
+	&:hover, &:active
+		background: $naranjaHover
+		box-shadow: none
+		color: $blanco
+	&:focus
+		appearence: none
+		background: $naranja
+		box-shadow: none
+		color: $blanco
+
+.btn-formu
+	background: transparent
+	border: 2px solid $colorBtnFormu
+	+border-radius($btn-bordes)
+	color: $colorBtnFormu
+	font-family: $semiBold
+	font-size: $mediana
+	transition: all ease 0.2s
+	&:hover, &:focus
+		color: $blanco
+		background: $naranja
+		border: 2px solid $naranja
+		box-shadow: none
