@@ -42,6 +42,24 @@
     border: 2px solid #e5503f;
     box-shadow: none; }
 
+.btn-languaje {
+  background: none;
+  color: rgba(62, 70, 70, 0.2);
+  font-family: "Bold";
+  padding-left: 0px;
+  padding-right: 0px; }
+  .btn-languaje:hover, .btn-languaje:focus {
+    color: rgba(62, 70, 70, 0.2); }
+
+.btn-languaje-active {
+  background: none;
+  color: #3e4646;
+  font-family: "Bold";
+  padding-left: 0px;
+  padding-right: 0px; }
+  .btn-languaje-active:hover, .btn-languaje-active:focus {
+    color: #3e4646; }
+
 .modal-content {
   background-image: url("../img/fondoGris.jpg"); }
 
