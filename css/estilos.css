@@ -56,6 +56,8 @@
   font-family: "Bold";
   font-size: 48px; }
 
+.formContacto .form-group {
+  margin-bottom: 50px !important; }
 .formContacto label {
   color: #fff;
   font-family: "semiBold";
