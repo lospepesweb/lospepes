@@ -6,32 +6,55 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-3">
-					<a href="#.">
-						<img class="img-responsive" src="img/logoG.png" alt="Los Pepes">
-					</a>
-				</div>
-				<div class="col-xs-9 text-right">
-					<button id="eng" class="btn btn-languaje">ENG</button>/<button id="esp" class="btn btn-languaje-active">ESP</button>
-				</div>
-				<div class="col-xs-9">
-					<p>EN ESTA CAJA VA EL MENU DE NAVEGACIÓN</p>
-				</div>
+		<nav class="navbar">
+		  	<div class="container">
+
+			    <div class="navbar-header">
+			    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<div id="nav-icon4">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</div>
+			    	</button>
+			    	<a class="navbar-brand" href="#">
+						<img class="hidden-xs hidden-sm" src="img/logoG.png" alt="Los Pepes">
+						<img class="hidden-md hidden-lg" src="img/logoS.png" alt="Los Pepes">
+			    	</a>
+			    </div>
+
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div class="languaje text-right">
+						<button id="eng" class="btn btn-languaje">ENG <span class="languaje-bar">/</span></button><button id="esp" class="btn btn-languaje-active">ESP</button>
+					</div>
+			    	<ul class="nav navbar-nav navbar-right">
+			        	<li><a href="#nosotros">NOSOTROS</a></li>
+			        	<li><a href="#">TECNOLOGÍA</a></li>
+			        	<li><a href="#">SERVICIOS</a></li>
+			        	<li><a href="#">TRABAJO</a></li>
+			        	<li><a href="#">CONTACTO</a></li>
+			        	<li><a href="#"><span class="icon icon-facebook2"></span></a></li>
+			    	</ul>
+			    </div>
+
 			</div>
-		</div>
+		</nav>
 	</header>
-
-
-
-
+	
 	<div class="container">
-		<a href="#." class="btn btn-naranja" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">FORMULARIO DE CONTACTO</a>
+		<span class="linea"></span>
 	</div>
+
+	<section id="nosotros">
+		<div class="container">
+			<a href="#." class="btn btn-naranja" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">FORMULARIO DE CONTACTO</a>
+		</div>
+	</section>
+
 
 	<!-- FORMULARIO -->
 	<div class="formulario">
@@ -69,5 +92,26 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/npm.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/icon.js"></script>
+	<!-- Este escript hace el efecto slice al seleccionar una opción del menú -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+		     $('a[href*=#]').click(function() {
+		     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+		         && location.hostname == this.hostname) {
+
+		             var $target = $(this.hash);
+		             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+		             if ($target.length) {
+		                 var targetOffset = $target.offset().top;
+		                 $('html,body').animate({scrollTop: targetOffset}, 500);
+		                 return false;
+		            }
+		       }
+		   });
+		});
+	</script>
 </body>
 </html>

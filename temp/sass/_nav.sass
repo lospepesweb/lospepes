@@ -1,11 +1,36 @@
 // -- SECCIÓN NAV -- //
 
+.navbar
+	font-family: $bold
+	height: 165px
+	margin-bottom: 0
+	@media (max-width: 991px)
+		height: 85px
+
+.navbar-header
+	height: 85px
+
+.linea
+	border-bottom: 1px solid $gris
+	float: left
+	margin-top: 10px
+	width: 100%
+
+.languaje
+	background: $blanco
+	height: 107px
+	line-height: 52px
+	@media (max-width: 991px)
+		height: 22px
+		// margin: 22px 0 0 0
+		padding: 0 0 50px 0
+		text-align: center
+		width: 100%
+
 .btn-languaje
 	background: none
 	color: $grisLanguaje
-	font-family: $bold
-	padding-left: 0px
-	padding-right: 0px
+	padding: 0
 	&:hover, &:focus, &:active
 		background: none
 		box-shadow: none
@@ -15,11 +40,78 @@
 .btn-languaje-active
 	background: none
 	color: $gris
-	font-family: $bold
-	padding-left: 0px
-	padding-right: 0px 
+	padding: 0
 	&:hover, &:focus, &:active
 		background: none
 		box-shadow: none
 		color: $gris
 		outline: none 
+
+.languaje-bar
+	color: $gris
+
+.navbar-collapse
+	background: $blanco
+
+.navbar-toggle
+	margin-top: 40px
+	padding: 0px
+
+.navbar-toggle .icon-bar 
+	background-color: $naranja
+
+.navbar-nav li a
+	background: $blanco
+	color: $naranja
+	text-align: center
+	&:hover, &:focus
+		color: $blanco
+		background-color: $naranja
+
+
+#nav-icon4 span
+	-webkit-transform: rotate(0deg)
+	-moz-transform: rotate(0deg)
+	-o-transform: rotate(0deg)
+	transform: rotate(0deg)
+	-webkit-transition: .25s ease-in-out
+	-moz-transition: .25s ease-in-out
+	-o-transition: .25s ease-in-out
+	transition: .25s ease-in-out
+
+#nav-icon4 span:nth-child(1)
+	top: 0px
+	-webkit-transform-origin: left center
+	-moz-transform-origin: left center
+	-o-transform-origin: left center
+	transform-origin: left center
+
+#nav-icon4 span:nth-child(2)
+	top: 18px
+	-webkit-transform-origin: left center
+	-moz-transform-origin: left center
+	-o-transform-origin: left center
+	transform-origin: left center
+
+#nav-icon4 span:nth-child(3)
+	top: 36px
+	-webkit-transform-origin: left center
+	-moz-transform-origin: left center
+	-o-transform-origin: left center
+	transform-origin: left center
+
+#nav-icon4.open span:nth-child(1)
+	-webkit-transform: rotate(35deg)
+	-moz-transform: rotate(35deg)
+	-o-transform: rotate(35deg)
+	transform: rotate(35deg)
+
+#nav-icon4.open span:nth-child(2)
+	width: 0%
+	opacity: 0
+
+#nav-icon4.open span:nth-child(3)
+	-webkit-transform: rotate(-35deg)
+	-moz-transform: rotate(-35deg)
+	-o-transform: rotate(-35deg)
+	transform: rotate(-35deg)

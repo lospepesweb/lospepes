@@ -48,12 +48,38 @@
     box-shadow: none;
     outline: none; }
 
+.navbar {
+  font-family: "Bold";
+  height: 165px;
+  margin-bottom: 0; }
+  @media (max-width: 991px) {
+    .navbar {
+      height: 85px; } }
+
+.navbar-header {
+  height: 85px; }
+
+.linea {
+  border-bottom: 1px solid #3e4646;
+  float: left;
+  margin-top: 10px;
+  width: 100%; }
+
+.languaje {
+  background: #fff;
+  height: 107px;
+  line-height: 52px; }
+  @media (max-width: 991px) {
+    .languaje {
+      height: 22px;
+      padding: 0 0 50px 0;
+      text-align: center;
+      width: 100%; } }
+
 .btn-languaje {
   background: none;
   color: rgba(62, 70, 70, 0.2);
-  font-family: "Bold";
-  padding-left: 0px;
-  padding-right: 0px; }
+  padding: 0; }
   .btn-languaje:hover, .btn-languaje:focus, .btn-languaje:active {
     background: none;
     box-shadow: none;
@@ -63,14 +89,80 @@
 .btn-languaje-active {
   background: none;
   color: #3e4646;
-  font-family: "Bold";
-  padding-left: 0px;
-  padding-right: 0px; }
+  padding: 0; }
   .btn-languaje-active:hover, .btn-languaje-active:focus, .btn-languaje-active:active {
     background: none;
     box-shadow: none;
     color: #3e4646;
     outline: none; }
+
+.languaje-bar {
+  color: #3e4646; }
+
+.navbar-collapse {
+  background: #fff; }
+
+.navbar-toggle {
+  margin-top: 40px;
+  padding: 0px; }
+
+.navbar-toggle .icon-bar {
+  background-color: #e5503f; }
+
+.navbar-nav li a {
+  background: #fff;
+  color: #e5503f;
+  text-align: center; }
+  .navbar-nav li a:hover, .navbar-nav li a:focus {
+    color: #fff;
+    background-color: #e5503f; }
+
+#nav-icon4 span {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out; }
+
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center; }
+
+#nav-icon4 span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center; }
+
+#nav-icon4 span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center; }
+
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg); }
+
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0; }
+
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  transform: rotate(-35deg); }
 
 .modal-content {
   background-image: url("../img/fondoGris.jpg"); }
