@@ -7,6 +7,9 @@
 @font-face {
   font-family: "Bold";
   src: url("../fonts/TheSansBold.otf"); }
+.btn {
+  outline: none; }
+
 .btn-naranja {
   background: #e5503f;
   -webkit-border-radius: 40px;
@@ -18,12 +21,14 @@
   .btn-naranja:hover, .btn-naranja:active {
     background: rgba(229, 80, 63, 0.8);
     box-shadow: none;
-    color: #fff; }
+    color: #fff;
+    outline: none; }
   .btn-naranja:focus {
     appearence: none;
     background: #e5503f;
     box-shadow: none;
-    color: #fff; }
+    color: #fff;
+    outline: none; }
 
 .btn-formu {
   background: transparent;
@@ -40,7 +45,8 @@
     color: #fff;
     background: #e5503f;
     border: 2px solid #e5503f;
-    box-shadow: none; }
+    box-shadow: none;
+    outline: none; }
 
 .btn-languaje {
   background: none;
@@ -48,8 +54,11 @@
   font-family: "Bold";
   padding-left: 0px;
   padding-right: 0px; }
-  .btn-languaje:hover, .btn-languaje:focus {
-    color: rgba(62, 70, 70, 0.2); }
+  .btn-languaje:hover, .btn-languaje:focus, .btn-languaje:active {
+    background: none;
+    box-shadow: none;
+    color: rgba(62, 70, 70, 0.2);
+    outline: none; }
 
 .btn-languaje-active {
   background: none;
@@ -57,16 +66,22 @@
   font-family: "Bold";
   padding-left: 0px;
   padding-right: 0px; }
-  .btn-languaje-active:hover, .btn-languaje-active:focus {
-    color: #3e4646; }
+  .btn-languaje-active:hover, .btn-languaje-active:focus, .btn-languaje-active:active {
+    background: none;
+    box-shadow: none;
+    color: #3e4646;
+    outline: none; }
 
 .modal-content {
   background-image: url("../img/fondoGris.jpg"); }
 
-.modal-header, .modal-footer {
+.modal-header {
   border: none; }
+  .modal-header .close {
+    outline: none; }
 
 .modal-footer {
+  border: none;
   text-align: left; }
 
 .modal-title {
