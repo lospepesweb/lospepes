@@ -59,62 +59,10 @@
 .navbar-header {
   height: 85px; }
 
-.linea {
-  border-bottom: 1px solid #3e4646;
-  float: left;
-  margin-top: 10px;
-  width: 100%; }
-
-.languaje {
-  background: #fff;
-  height: 107px;
-  line-height: 52px; }
-  @media (max-width: 991px) {
-    .languaje {
-      height: 22px;
-      padding: 0 0 50px 0;
-      text-align: center;
-      width: 100%; } }
-
-.btn-languaje {
-  background: none;
-  color: rgba(62, 70, 70, 0.2);
-  padding: 0; }
-  .btn-languaje:hover, .btn-languaje:focus, .btn-languaje:active {
-    background: none;
-    box-shadow: none;
-    color: rgba(62, 70, 70, 0.2);
-    outline: none; }
-
-.btn-languaje-active {
-  background: none;
-  color: #3e4646;
-  padding: 0; }
-  .btn-languaje-active:hover, .btn-languaje-active:focus, .btn-languaje-active:active {
-    background: none;
-    box-shadow: none;
-    color: #3e4646;
-    outline: none; }
-
-.languaje-bar {
-  color: #3e4646; }
-
-.navbar-collapse {
-  background: #fff; }
-
 .navbar-toggle {
   margin-top: 40px;
   padding: 0px; }
-
-.navbar-toggle .icon-bar {
-  background-color: #e5503f; }
-
-.navbar-nav li a {
-  background: #fff;
-  color: #e5503f;
-  text-align: center; }
-  .navbar-nav li a:hover, .navbar-nav li a:focus {
-    color: #fff;
+  .navbar-toggle .icon-bar {
     background-color: #e5503f; }
 
 #nav-icon4 span {
@@ -163,6 +111,57 @@
   -moz-transform: rotate(-35deg);
   -o-transform: rotate(-35deg);
   transform: rotate(-35deg); }
+
+.navbar-collapse {
+  background: #fff; }
+
+.languaje {
+  background: #fff;
+  height: 107px;
+  line-height: 52px; }
+  @media (max-width: 991px) {
+    .languaje {
+      height: 22px;
+      padding: 0 0 50px 0;
+      text-align: center;
+      width: 100%; } }
+
+.btn-languaje {
+  background: none;
+  color: rgba(62, 70, 70, 0.2);
+  padding: 0; }
+  .btn-languaje:hover, .btn-languaje:focus, .btn-languaje:active {
+    background: none;
+    box-shadow: none;
+    color: rgba(62, 70, 70, 0.2);
+    outline: none; }
+
+.btn-languaje-active {
+  background: none;
+  color: #3e4646;
+  padding: 0; }
+  .btn-languaje-active:hover, .btn-languaje-active:focus, .btn-languaje-active:active {
+    background: none;
+    box-shadow: none;
+    color: #3e4646;
+    outline: none; }
+
+.languaje-bar {
+  color: #3e4646; }
+
+.navbar-nav li a {
+  background: #fff;
+  color: #e5503f;
+  text-align: center; }
+  .navbar-nav li a:hover, .navbar-nav li a:focus {
+    color: #fff;
+    background-color: #e5503f; }
+
+.linea {
+  border-bottom: 1px solid #3e4646;
+  float: left;
+  margin-top: 10px;
+  width: 100%; }
 
 .modal-content {
   background-image: url("../img/fondoGris.jpg"); }

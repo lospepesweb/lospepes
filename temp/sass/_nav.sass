@@ -7,68 +7,17 @@
 	@media (max-width: 991px)
 		height: 85px
 
+// -- Menú hamburguesa -- //
 .navbar-header
 	height: 85px
-
-.linea
-	border-bottom: 1px solid $gris
-	float: left
-	margin-top: 10px
-	width: 100%
-
-.languaje
-	background: $blanco
-	height: 107px
-	line-height: 52px
-	@media (max-width: 991px)
-		height: 22px
-		// margin: 22px 0 0 0
-		padding: 0 0 50px 0
-		text-align: center
-		width: 100%
-
-.btn-languaje
-	background: none
-	color: $grisLanguaje
-	padding: 0
-	&:hover, &:focus, &:active
-		background: none
-		box-shadow: none
-		color: $grisLanguaje
-		outline: none 
-
-.btn-languaje-active
-	background: none
-	color: $gris
-	padding: 0
-	&:hover, &:focus, &:active
-		background: none
-		box-shadow: none
-		color: $gris
-		outline: none 
-
-.languaje-bar
-	color: $gris
-
-.navbar-collapse
-	background: $blanco
 
 .navbar-toggle
 	margin-top: 40px
 	padding: 0px
-
-.navbar-toggle .icon-bar 
-	background-color: $naranja
-
-.navbar-nav li a
-	background: $blanco
-	color: $naranja
-	text-align: center
-	&:hover, &:focus
-		color: $blanco
+	.icon-bar 
 		background-color: $naranja
 
-
+// -- Animación del menú hamburguesa -- //
 #nav-icon4 span
 	-webkit-transform: rotate(0deg)
 	-moz-transform: rotate(0deg)
@@ -115,3 +64,59 @@
 	-moz-transform: rotate(-35deg)
 	-o-transform: rotate(-35deg)
 	transform: rotate(-35deg)
+
+// -- Menú de escritorio -- //
+.navbar-collapse
+	background: $blanco
+
+// -- Opciones de Idioma -- //
+.languaje
+	background: $blanco
+	height: 107px
+	line-height: 52px
+	@media (max-width: 991px)
+		height: 22px
+		padding: 0 0 50px 0
+		text-align: center
+		width: 100%
+
+.btn-languaje
+	background: none
+	color: $grisLanguaje
+	padding: 0
+	&:hover, &:focus, &:active
+		background: none
+		box-shadow: none
+		color: $grisLanguaje
+		outline: none 
+
+.btn-languaje-active
+	background: none
+	color: $gris
+	padding: 0
+	&:hover, &:focus, &:active
+		background: none
+		box-shadow: none
+		color: $gris
+		outline: none 
+
+.languaje-bar
+	color: $gris
+
+// -- Lista de los elementos del Menú -- //
+.navbar-nav
+	li
+		a
+			background: $blanco
+			color: $naranja
+			text-align: center
+			&:hover, &:focus
+				color: $blanco
+				background-color: $naranja
+
+// -- Linea del border bottom del menú -- //
+.linea
+	border-bottom: 1px solid $gris
+	float: left
+	margin-top: 10px
+	width: 100%
