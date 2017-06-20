@@ -75,7 +75,7 @@
   border-radius: 40px;
   color: rgba(255, 255, 255, 0.5);
   font-family: "semiBold";
-  font-size: 24px;
+  font-size: 29px;
   transition: all ease 0.2s; }
   .btn-formu:hover, .btn-formu:focus {
     color: #fff;
@@ -267,6 +267,33 @@
   .tecnologia img {
     margin: 75px 0 0 0; }
 
+.servicios {
+  padding: 75px 0; }
+  @media (max-height: 991px) {
+    .servicios {
+      padding-bottom: 25px; } }
+  .servicios img {
+    margin: auto; }
+  .servicios h2 {
+    font-family: "Bold";
+    font-size: 29px;
+    margin-top: 50px; }
+  @media (max-width: 991px) {
+    .servicios h2.movil {
+      margin-top: 22px; } }
+  .servicios .lineaServ {
+    border-bottom: 1px solid rgba(62, 70, 70, 0.8);
+    float: left;
+    margin-left: 32.5%;
+    width: 35%; }
+  .servicios p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; }
+    @media (max-width: 991px) {
+      .servicios p {
+        margin-bottom: 50px; } }
+
 .modal-content {
   background-image: url("../img/fondoGris.jpg"); }
   @media (max-width: 991px) {
@@ -293,7 +320,7 @@
 .formContacto label {
   color: #fff;
   font-family: "semiBold";
-  font-size: 24px; }
+  font-size: 29px; }
 .formContacto input, .formContacto textarea {
   color: #fff;
   background: transparent;
