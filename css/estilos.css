@@ -294,6 +294,19 @@
       .servicios p {
         margin-bottom: 50px; } }
 
+.trabajos {
+  background-image: url("../img/fondoGris.jpg");
+  background-size: cover;
+  padding: 75px 0; }
+  .trabajos .p1, .trabajos .p2, .trabajos .p3 {
+    color: #fff; }
+  .trabajos a {
+    display: block;
+    margin-top: 75px; }
+  .trabajos img {
+    margin-left: auto;
+    margin-right: auto; }
+
 .modal-content {
   background-image: url("../img/fondoGris.jpg"); }
   @media (max-width: 991px) {
