@@ -29,10 +29,11 @@
 
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<div class="languaje text-right">
-						<button id="eng" class="btn btn-languaje">ENG <span class="languaje-bar">/</span></button><button id="esp" class="btn btn-languaje-active">ESP</button>
+						<a href="#" id="eng" class="btn btn-languaje">ENG <span class="languaje-bar">/</span></a>
+						<a href="#" id="esp" class="btn btn-languaje-active">ESP</a>
 					</div>
 			    	<ul class="nav navbar-nav navbar-right">
-			        	<li><a href="#nosotros">NOSOTROS</a></li>
+			        	<li><a href="#osotros">NOSOTROS</a></li>
 			        	<li><a href="#">TECNOLOGÍA</a></li>
 			        	<li><a href="#">SERVICIOS</a></li>
 			        	<li><a href="#">TRABAJO</a></li>
@@ -57,9 +58,9 @@
 
 
 	<!-- FORMULARIO -->
-	<div class="formulario">
+	<div id="formulario" class="formulario">
 		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-			<div class="modal-dialog" role="document">
+			<div id="modal-dialog" class="modal-dialog" role="document">
 			    <div class="modal-content">
 			    	<div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -69,15 +70,15 @@
 				        <form class="formContacto">
 				        	<div class="form-group">
 					        	<label for="recipient-name" class="control-label">Tu nombre</label>
-					        	<input type="text" class="form-control" id="recipient-name" placeholder="Nombre y Apellido" required>
+					        	<input type="text" class="form-control" id="recipient-name" placeholder="Sheriff Woody" required>
 				        	</div>
 				    		<div class="form-group">
 					        	<label for="recipient-email" class="control-label">Tu dirección de email</label>
-					        	<input type="email" class="form-control" id="recipient-email" placeholder="minombre@mimail.com" required>
+					        	<input type="email" class="form-control" id="recipient-email" placeholder="woody@toystory.com" required>
 				        	</div>
 				        	<div class="form-group">
 					        	<label for="message-text" class="control-label">Contanos cuál es tu idea</label>
-					        	<textarea class="form-control" id="message-text" placeholder="Quiero mi web!" required></textarea>
+					        	<input class="form-control" id="message-text" placeholder="Hay una zerpiente en mi bota!" required>
 				        	</div>
 					    	<div class="modal-footer">
 					        	<button type="submit" class="btn btn-formu">Enviar</button>
@@ -92,8 +93,6 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/npm.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
-	<script type="text/javascript" src="js/icon.js"></script>
-	<!-- Este escript hace el efecto slice al seleccionar una opción del menú -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function(){

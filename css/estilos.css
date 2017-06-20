@@ -151,11 +151,28 @@
 
 .navbar-nav li a {
   background: #fff;
+  border: 1px solid #fff;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  border-radius: 40px;
   color: #e5503f;
+  margin-left: 3px;
+  margin-right: 3px;
   text-align: center; }
-  .navbar-nav li a:hover, .navbar-nav li a:focus {
-    color: #fff;
-    background-color: #e5503f; }
+  .navbar-nav li a:hover {
+    background: #fff;
+    border: 1px solid #e5503f; }
+  .navbar-nav li a:focus {
+    background: #e5503f;
+    border: 1px solid #e5503f;
+    color: #fff; }
+.navbar-nav li:last-child a:hover {
+  border: 1px solid #fff; }
+.navbar-nav li:last-child a:focus {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #e5503f; }
 
 .linea {
   border-bottom: 1px solid #3e4646;
@@ -165,6 +182,10 @@
 
 .modal-content {
   background-image: url("../img/fondoGris.jpg"); }
+  @media (max-width: 991px) {
+    .modal-content {
+      margin-left: 5%;
+      width: 90%; } }
 
 .modal-header {
   border: none; }

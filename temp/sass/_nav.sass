@@ -108,11 +108,27 @@
 	li
 		a
 			background: $blanco
+			border: 1px solid $blanco
+			+border-radius(40px)
 			color: $naranja
+			margin-left: 3px
+			margin-right: 3px
 			text-align: center
-			&:hover, &:focus
+			&:hover
+				background: $blanco
+				border: 1px solid $naranja
+			&:focus
+				background: $naranja
+				border: 1px solid $naranja
 				color: $blanco
-				background-color: $naranja
+		&:last-child
+			a
+				&:hover
+					border: 1px solid $blanco
+				&:focus
+					background: $blanco
+					border: 1px solid $blanco
+					color: $naranja
 
 // -- Linea del border bottom del menú -- //
 .linea
