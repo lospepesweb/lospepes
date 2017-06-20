@@ -1,4 +1,4 @@
-// (function (){
+(function (){
 
 // -- SELECCIÓN DEL IDIOMA -- //
 
@@ -53,4 +53,4 @@ $(document).ready(function(){
 	});
 });
 
-// }())
+}())

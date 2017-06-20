@@ -1,17 +1,20 @@
 // -- FONTS -- //
 
-$light: "Ligth"
+$light: "Light"
 $semiBold: "semiBold"
 $bold: "Bold"
 
+$xGrande: 82px
+$mGrande: 62px
 $grande: 48px
-$semiGrande: 32px
+$semiGrande: 36px
 $mediana: 24px
-
+$chica: 20px
+$mChica: 16px
 
 @font-face
 	font-family: "Light"
-	src: url("../fonts/TheSans-3-LightIta.otf")
+	src: url("../fonts/TheSansLight.ttf")
 
 @font-face
 	font-family: "semiBold"
@@ -20,3 +23,30 @@ $mediana: 24px
 @font-face
 	font-family: "Bold"
 	src: url("../fonts/TheSansBold.otf")
+
+.p1, .p2, .p3
+	margin: 0
+	padding: 0
+
+.p1
+	font-family: $light
+	font-size: $xGrande
+	line-height: $xGrande
+	@media (max-width: 1199px)
+		font-size: $mGrande
+		line-height: $mGrande
+
+.p2
+	font-family: $bold
+	font-size: $xGrande
+	line-height: $xGrande
+	@media (max-width: 1199px)
+		font-size: $mGrande
+		line-height: $mGrande
+.p3
+	font-family: $light
+	font-size: $chica
+	line-height: $chica
+	margin: 20px 0
+	@media (max-width: 1199px)
+		font-size: $mChica

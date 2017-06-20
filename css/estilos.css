@@ -1,14 +1,50 @@
 @font-face {
   font-family: "Light";
-  src: url("../fonts/TheSans-3-LightIta.otf"); }
+  src: url("../fonts/TheSansLight.ttf"); }
 @font-face {
   font-family: "semiBold";
   src: url("../fonts/TheSans-6-SemiBold.otf"); }
 @font-face {
   font-family: "Bold";
   src: url("../fonts/TheSansBold.otf"); }
+.p1, .p2, .p3 {
+  margin: 0;
+  padding: 0; }
+
+.p1 {
+  font-family: "Light";
+  font-size: 82px;
+  line-height: 82px; }
+  @media (max-width: 1199px) {
+    .p1 {
+      font-size: 62px;
+      line-height: 62px; } }
+
+.p2 {
+  font-family: "Bold";
+  font-size: 82px;
+  line-height: 82px; }
+  @media (max-width: 1199px) {
+    .p2 {
+      font-size: 62px;
+      line-height: 62px; } }
+
+.p3 {
+  font-family: "Light";
+  font-size: 20px;
+  line-height: 20px;
+  margin: 20px 0; }
+  @media (max-width: 1199px) {
+    .p3 {
+      font-size: 16px; } }
+
 .btn {
+  font-size: 20px;
   outline: none; }
+
+.btn-container {
+  margin: 10px 0 50px 0;
+  padding: 0; }
 
 .btn-naranja {
   background: #e5503f;
@@ -51,10 +87,12 @@
 .navbar {
   font-family: "Bold";
   height: 165px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-top: 25px; }
   @media (max-width: 991px) {
     .navbar {
-      height: 85px; } }
+      height: 85px;
+      padding-top: 0; } }
 
 .navbar-header {
   height: 85px; }
@@ -157,6 +195,7 @@
   -ms-border-radius: 40px;
   border-radius: 40px;
   color: #e5503f;
+  font-size: 20px;
   margin-left: 3px;
   margin-right: 3px;
   text-align: center; }
@@ -177,8 +216,56 @@
 .linea {
   border-bottom: 1px solid #3e4646;
   float: left;
-  margin-top: 10px;
+  margin-top: 20px;
   width: 100%; }
+
+.nosotros .container {
+  background-image: url("../img/fondoNosotros.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-top: 100px; }
+  @media (max-width: 991px) {
+    .nosotros .container {
+      background-image: none; } }
+.nosotros .p1 {
+  color: #3e4646; }
+.nosotros .p2 {
+  color: #e5503f; }
+.nosotros .p3 {
+  color: #3e4646; }
+.nosotros img {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.tecnologia {
+  background-image: url("../img/fondoNaranja.jpg");
+  background-size: cover;
+  padding-bottom: 75px;
+  padding-top: 75px; }
+  .tecnologia .fondoTecno {
+    background-image: url("../img/fondoTecno.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    height: 550px; }
+    @media (max-width: 1199px) {
+      .tecnologia .fondoTecno {
+        background-image: url("../img/fondoTecnoMD.png");
+        height: 500px; } }
+    @media (max-width: 991px) {
+      .tecnologia .fondoTecno {
+        background-image: none;
+        height: auto; } }
+  .tecnologia .p-container {
+    padding: 0; }
+  .tecnologia .p1, .tecnologia .p2, .tecnologia .p3 {
+    color: #fff;
+    text-align: right; }
+    @media (max-width: 991px) {
+      .tecnologia .p1, .tecnologia .p2, .tecnologia .p3 {
+        text-align: left; } }
+  .tecnologia img {
+    margin: 75px 0 0 0; }
 
 .modal-content {
   background-image: url("../img/fondoGris.jpg"); }
