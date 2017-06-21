@@ -29,7 +29,7 @@ btnEng.addEventListener("click", colorEng);
 
 // VARIABLES
 var alturaPantalla = window.innerHeight;
-var alturaDiv = 577 + 2 // document.getElementById("modal-dialog").clientHeight;
+var alturaDiv = 559 + 2 // document.getElementById("modal-dialog").clientHeight;
 var margen = (alturaPantalla - alturaDiv) / 2;
 
 // FUNCIONES
@@ -53,4 +53,57 @@ $(document).ready(function(){
 	});
 });
 
+
+
+
+
+
+
+
 }())
+
+
+
+
+// -- COMPORTAMIENTO DEL BOTÓN ENTRAR -- //
+
+// VARIABLES
+var boton = document.getElementById("button");
+var nombreInput = document.getElementById("recipient-name");
+var mailInput = document.getElementById("recipient-email");
+var ideaInput = document.getElementById("message-text");
+var formulario = document.getElementById("formContacto");
+
+
+// FUNCIONES
+// Si doy clic en enviar ejecuta está funció, la que comprueba que el formu este comleto
+var entrar = function(){
+
+var validaNombre = nombreInput.value;
+var validaMail = mailInput.value;
+var validaIdea = ideaInput.value;
+
+	if(validaNombre === ""){
+		nombreInput.className = "form-control error";
+		return false
+	} else {
+		nombreInput.className = "form-control";
+	}
+	if(validaMail === ""){
+		mailInput.className = "form-control error";
+		return false
+	} else {
+		mailInput.className = "form-control";
+	}
+	if(validaIdea === ""){
+		ideaInput.className = "form-control error";
+		return false
+	} else {
+		ideaInput.className = "form-control error";
+	}
+	
+	formulario.submit();
+};
+
+// EVENTOS
+boton.addEventListener("click", entrar);

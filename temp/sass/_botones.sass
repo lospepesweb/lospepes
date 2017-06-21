@@ -8,7 +8,7 @@ $btn-bordes: 40px
 	outline: none
 
 .btn-container
-	margin: 10px 0 50px 0
+	margin: 10px 0 75px 0
 	padding: 0
 
 // -- Botón Naranja -- //
@@ -28,6 +28,25 @@ $btn-bordes: 40px
 		box-shadow: none
 		color: $blanco
 		outline: none
+
+// -- Botón Gris -- //
+.btn-gris
+	background: $gris
+	+border-radius($btn-bordes)
+	color: $blanco !important
+	font-family: $bold
+	&:hover, &:active
+		background: $grisHover
+		box-shadow: none
+		color: $blanco
+		outline: none
+	&:focus
+		appearence: none
+		background: $gris
+		box-shadow: none
+		color: $blanco
+		outline: none
+
 
 // -- Botón del Formulario -- //
 .btn-formu

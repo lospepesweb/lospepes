@@ -1,0 +1,55 @@
+// -- SECCIÓN CONTACTO -- //
+
+.modal-content
+	background-image: url("../img/fondoGris.jpg")
+	@media (max-width: 991px)
+		margin-left: 5%
+		width: 90%
+
+.modal-header
+	border: none
+	padding-bottom: 0
+	.close
+		&:active, &:focus, &:hover
+		outline: none
+.modal-body
+	padding-top: 0
+
+.modal-footer
+	border: none
+	text-align: left
+	padding: 30px 0 0 0 
+
+.modal-title
+	color: #fff
+	font-family: $bold
+	font-size: $mGrande
+	line-height: $mGrande
+	padding: 20px 0 20px 0
+	@media (max-width: 991px)
+		font-size: $grande
+		line-height: $mGrande
+
+.formContacto
+	.form-group
+		margin-bottom: 25px !important
+		margin-top: 25px !important
+	label
+		color: #fff
+		font-family: $semiBold
+		font-size: $mediana
+	input, textarea
+		color: #fff
+		background: transparent
+		border: none
+		box-shadow: none
+		border-radius: 0px
+		border-bottom: 1px solid $colorBorderBotton !important
+		font-family: $semiBold
+		resize: none
+		transition: all ease 0.8s
+		&:hover, &:focus
+			border-bottom: 1px solid $blanco !important
+			box-shadow: none
+	input.error
+		border-bottom: 1px solid $naranja !important
