@@ -56,15 +56,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-}())
-
-
-
-
 // -- COMPORTAMIENTO DEL BOTÓN ENTRAR -- //
 
 // VARIABLES
@@ -79,31 +70,84 @@ var formulario = document.getElementById("formContacto");
 // Si doy clic en enviar ejecuta está funció, la que comprueba que el formu este comleto
 var entrar = function(){
 
-var validaNombre = nombreInput.value;
-var validaMail = mailInput.value;
-var validaIdea = ideaInput.value;
-
-	if(validaNombre === ""){
+	if(nombreInput.value === ""){
 		nombreInput.className = "form-control error";
+		nombreInput.focus();
 		return false
 	} else {
 		nombreInput.className = "form-control";
 	}
-	if(validaMail === ""){
+	if(mailInput.value === ""){
 		mailInput.className = "form-control error";
+		mailInput.focus();
 		return false
 	} else {
 		mailInput.className = "form-control";
 	}
-	if(validaIdea === ""){
+	if((ideaInput.value === "") || (ideaInput.value.length < 10)){
 		ideaInput.className = "form-control error";
+		ideaInput.focus();
 		return false
 	} else {
-		ideaInput.className = "form-control error";
+		ideaInput.className = "form-control";
 	}
 	
 	formulario.submit();
 };
 
+// Control de input por input
+var controlNombre = function(){
+
+	if(nombreInput.value === ""){
+		nombreInput.className = "form-control error";
+		return false
+	} else {
+		nombreInput.className = "form-control";
+	}
+
+};
+var controlMail = function(){
+
+	if(mailInput.value === ""){
+		mailInput.className = "form-control error";
+		return false
+	} else {
+		mailInput.className = "form-control";
+	}
+
+};
+var controlIdea = function(){
+
+	if(ideaInput.value === ""){
+		ideaInput.className = "form-control error";
+		return false
+	} else {
+		ideaInput.className = "form-control";
+	}
+
+};
+// Agregar la clase focus al boton submit al completar todos los campos
+var completo = function(){
+
+	if (!(nombreInput.value === "") && !(mailInput.value === "") && (ideaInput.value.length > 10)) {
+		boton.className = "btn btn-formu-active";
+		ideaInput.className = "form-control";
+	} else {
+		boton.className = "btn btn-formu";
+	}
+}
+
 // EVENTOS
 boton.addEventListener("click", entrar);
+
+nombreInput.addEventListener("change", controlNombre);
+mailInput.addEventListener("change", controlMail);
+ideaInput.addEventListener("change", controlIdea);
+
+nombreInput.addEventListener("change", completo);
+mailInput.addEventListener("change", completo);
+ideaInput.addEventListener("keypress", completo);
+
+
+
+}())

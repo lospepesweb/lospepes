@@ -2,64 +2,72 @@
 
 $btn-bordes: 40px
 
-.btn
-	font-size: $chica
-	&:hover, &:active, &:focus
-	outline: none
-
 .btn-container
 	margin: 10px 0 75px 0
 	padding: 0
 
-// -- Botón Naranja -- //
-.btn-naranja
-	background: $naranja
-	+border-radius($btn-bordes)
-	color: $blanco
-	font-family: $bold
-	&:hover, &:active
-		background: $naranjaHover
-		box-shadow: none
-		color: $blanco
-		outline: none
-	&:focus
-		appearence: none
-		background: $naranja
-		box-shadow: none
-		color: $blanco
-		outline: none
-
-// -- Botón Gris -- //
-.btn-gris
-	background: $gris
+.btn
+	font-size: $chica
 	+border-radius($btn-bordes)
 	color: $blanco !important
 	font-family: $bold
 	&:hover, &:active
-		background: $grisHover
-		box-shadow: none
-		color: $blanco
 		outline: none
+		box-shadow: none
 	&:focus
 		appearence: none
-		background: $gris
 		box-shadow: none
-		color: $blanco
 		outline: none
 
+// -- Botón Naranja -- //
+.btn-naranja
+	background: $naranja
+	&:hover, &:active
+		background: $naranjaHover
+		color: $blanco
+	&:focus
+		background: $naranja
+		color: $blanco
+
+// -- Botón Gris -- //
+.btn-gris
+	background: $gris
+	&:hover, &:active
+		background: $grisHover
+		color: $blanco
+	&:focus
+		background: $gris
+		color: $blanco
 
 // -- Botón del Formulario -- //
 .btn-formu
-	background: transparent
 	border: 2px solid $colorBtnFormu
+	color: $colorBtnFormu !important
+	background: transparent
 	+border-radius($btn-bordes)
-	color: $colorBtnFormu
 	font-family: $semiBold
 	font-size: $mediana
 	transition: all ease 0.2s
-	&:hover, &:focus
-		color: $blanco
-		background: $naranja
-		border: 2px solid $naranja
-		box-shadow: none
-		outline: none
+
+.btn-formu-active
+	border: 2px solid $blanco
+	color: $blanco !important
+	background: transparent
+	+border-radius($btn-bordes)
+	font-family: $semiBold
+	font-size: $mediana
+	transition: all ease 0.2s
+
+// -- Flecha ir arriba -- //
+.ir-arriba 
+	display: none
+	background-color: transparent
+	cursor: pointer
+	position: fixed
+	bottom: 5px
+	right: 5px
+	background-image: url(../img/flecha.png)
+	width: 41px
+	height: 41px
+	border-radius: 5px
+	z-index: 9999 !important

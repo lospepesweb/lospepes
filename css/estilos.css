@@ -38,71 +38,80 @@
     .p3 {
       font-size: 16px; } }
 
-.btn {
-  font-size: 20px;
-  outline: none; }
-
 .btn-container {
   margin: 10px 0 75px 0;
   padding: 0; }
 
-.btn-naranja {
-  background: #e5503f;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  border-radius: 40px;
-  color: #fff;
-  font-family: "Bold"; }
-  .btn-naranja:hover, .btn-naranja:active {
-    background: rgba(229, 80, 63, 0.8);
-    box-shadow: none;
-    color: #fff;
-    outline: none; }
-  .btn-naranja:focus {
-    appearence: none;
-    background: #e5503f;
-    box-shadow: none;
-    color: #fff;
-    outline: none; }
-
-.btn-gris {
-  background: #3e4646;
+.btn {
+  font-size: 20px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   border-radius: 40px;
   color: #fff !important;
   font-family: "Bold"; }
-  .btn-gris:hover, .btn-gris:active {
-    background: rgba(62, 70, 70, 0.8);
-    box-shadow: none;
-    color: #fff;
-    outline: none; }
-  .btn-gris:focus {
+  .btn:hover, .btn:active {
+    outline: none;
+    box-shadow: none; }
+  .btn:focus {
     appearence: none;
-    background: #3e4646;
     box-shadow: none;
-    color: #fff;
     outline: none; }
 
+.btn-naranja {
+  background: #e5503f; }
+  .btn-naranja:hover, .btn-naranja:active {
+    background: rgba(229, 80, 63, 0.8);
+    color: #fff; }
+  .btn-naranja:focus {
+    background: #e5503f;
+    color: #fff; }
+
+.btn-gris {
+  background: #3e4646; }
+  .btn-gris:hover, .btn-gris:active {
+    background: rgba(62, 70, 70, 0.8);
+    color: #fff; }
+  .btn-gris:focus {
+    background: #3e4646;
+    color: #fff; }
+
 .btn-formu {
-  background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5) !important;
+  background: transparent;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   border-radius: 40px;
-  color: rgba(255, 255, 255, 0.5);
   font-family: "semiBold";
   font-size: 29px;
   transition: all ease 0.2s; }
-  .btn-formu:hover, .btn-formu:focus {
-    color: #fff;
-    background: #e5503f;
-    border: 2px solid #e5503f;
-    box-shadow: none;
-    outline: none; }
+
+.btn-formu-active {
+  border: 2px solid #fff;
+  color: #fff !important;
+  background: transparent;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  border-radius: 40px;
+  font-family: "semiBold";
+  font-size: 29px;
+  transition: all ease 0.2s; }
+
+.ir-arriba {
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  background-image: url(../img/flecha.png);
+  width: 41px;
+  height: 41px;
+  border-radius: 5px;
+  z-index: 9999 !important; }
 
 .navbar {
   font-family: "Bold";
@@ -240,7 +249,7 @@
   width: 100%; }
 
 .nosotros .container {
-  background-image: url("../img/fondoNosotros.jpg");
+  background-image: url("../img/fondoNosotros.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   padding-top: 100px; }
@@ -315,17 +324,18 @@
         margin-bottom: 50px; } }
 
 .trabajos {
-  background-image: url("../img/fondoGris.jpg");
+  background-image: url("../img/fondoGris.png");
   background-size: cover;
   padding: 75px 0; }
   .trabajos .p1, .trabajos .p2, .trabajos .p3 {
     color: #fff; }
   .trabajos a {
     display: block;
-    margin-top: 75px; }
+    margin-top: 75px;
+    padding-left: auto;
+    padding-right: auto; }
   .trabajos img {
-    margin-left: auto;
-    margin-right: auto; }
+    display: inline-block; }
 
 .contacto {
   padding: 75px 0 0 0; }
@@ -333,7 +343,7 @@
     background-image: url("../img/fondoContacto.png");
     background-position: bottom right;
     background-repeat: no-repeat;
-    height: 400px; }
+    height: 352px; }
     @media (max-width: 991px) {
       .contacto .fondoContacto {
         background: none; } }
@@ -346,7 +356,7 @@
       text-decoration: none; }
 
 .modal-content {
-  background-image: url("../img/fondoGris.jpg"); }
+  background-image: url("../img/fondoGris.png"); }
   @media (max-width: 991px) {
     .modal-content {
       margin-left: 5%;

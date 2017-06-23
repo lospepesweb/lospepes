@@ -24,7 +24,7 @@
 			    	</button>
 			    	<a class="navbar-brand" href="#">
 						<img class="hidden-xs hidden-sm" src="img/logoG.png" alt="Los Pepes">
-						<img class="hidden-md hidden-lg" src="img/logoS.jpg" alt="Los Pepes">
+						<img class="hidden-md hidden-lg" src="img/logoS.png" alt="Los Pepes">
 			    	</a>
 			    </div>
 
@@ -53,12 +53,12 @@
 
 	<section id="nosotros" class="nosotros">
 		<div class="container">
-			<img class="hidden-md hidden-lg img-responsive" src="img/fondoNosotros.jpg" alt="Los Pepes WEB">
+			<img class="hidden-md hidden-lg img-responsive" src="img/fondoNosotros.png" alt="Los Pepes WEB">
 			<p class="p1">Llevamos tu empresa</p>
 			<p class="p2">al siguiente nivel</p>
 			<p class="p3 col-md-6">Pureza, integración y compromiso son algunos de los valores que nos caracterizan como desarrolladores, y bajo estas premisas trabajamos día a día con el fin de ayudar a nuestros clientes en el posicionamiento de sus marcas en Internet.</p>
 			<div class="btn-container col-xs-12 hidden-xs">
-				<a href="#." class="btn btn-naranja" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">FORMULARIO DE CONTACTO</a>
+				<a href="#." class="btn btn-naranja" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">CONTACTANOS</a>
 			</div>
 		</div>
 	</section>
@@ -121,12 +121,12 @@
 				</div>
 				<div class="clearfix"></div>
 				<div class="col-md-4 col-md-offset-1">
-					<a href="http://meatpoint-sj.com/" target="_blank">
+					<a class="text-center" href="http://meatpoint-sj.com/" target="_blank">
 						<img class="img-responsive" src="img/meatPoint.png" alt="Los Pepes">
 					</a>
 				</div>
 				<div class="col-md-4 col-md-offset-2">
-					<a href="http://www.pcyasoc.com.ar/" target="_blank">
+					<a class="text-center" href="http://www.pcyasoc.com.ar/" target="_blank">
 						<img class="img-responsive" src="img/pobleteCastro.png" alt="Los Pepes">
 					</a>
 				</div>
@@ -139,11 +139,11 @@
 			<div class="fondoContacto">
 				<p class="p2">Contactanos</p>
 				<p class="p3"><a href="mailto:hola@lospepesweb.com" class="p3">hola@lospepesweb.com</a></p>
-				<p class="p3">264 6725215 | 264 4815661</p>
+<!-- 				<p class="p3">264 6725215 | 264 4815661</p> -->
 				<p class="p3">San Juan, Argentina</p>
 				<p class="p3"><a href="#"><span class="icon icon-facebook2"></span>/lospepesweb</a></p>
 				<div class="btn-container col-xs-12">
-					<a href="#." class="btn btn-gris" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">FORMULARIO DE CONTACTO</a>
+					<a href="#." class="btn btn-gris" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">CONTACTANOS</a>
 				</div>
 			</div>
 		</div>
@@ -176,7 +176,7 @@
 					        	<input class="form-control" id="message-text" placeholder="Hay una zerpiente en mi bota!">
 				        	</div>
 					    	<div class="modal-footer">
-					        	<button type="button" id="button" class="btn btn-formu" >Enviar</button>
+					        	<button type="button" id="button" class="btn btn-formu">Enviar</button>
 					    	</div>
 				        </form>
 			    	</div>
@@ -208,6 +208,23 @@
 		   });
 		});
 	</script>
+	<script>
+		$(document).ready(function(){
+			$('.ir-arriba').click(function(){
+				$('body, html').animate({
+					scrollTop: '0px'
+				}, 300);
+			});
+			$(window).scroll(function(){
+				if( $(this).scrollTop() > 0 ){
+					$('.ir-arriba').slideDown(300);
+				} else {
+					$('.ir-arriba').slideUp(300);
+				}
+			});
+		});
+	</script>
+	<span class="ir-arriba"></span>
 </body>
 </html>
 
