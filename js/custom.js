@@ -118,7 +118,7 @@ var controlMail = function(){
 };
 var controlIdea = function(){
 
-	if(ideaInput.value === ""){
+	if((ideaInput.value === "") || (ideaInput.value.length < 10) ){
 		ideaInput.className = "form-control error";
 		return false
 	} else {
@@ -129,7 +129,7 @@ var controlIdea = function(){
 // Agregar la clase focus al boton submit al completar todos los campos
 var completo = function(){
 
-	if (!(nombreInput.value === "") && !(mailInput.value === "") && (ideaInput.value.length > 10)) {
+	if (!(nombreInput.value === "") && !(mailInput.value === "") && (ideaInput.value.length > 8)) {
 		boton.className = "btn btn-formu-active";
 		ideaInput.className = "form-control";
 	} else {

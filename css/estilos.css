@@ -17,8 +17,8 @@
   line-height: 82px; }
   @media (max-width: 1199px) {
     .p1 {
-      font-size: 62px;
-      line-height: 62px; } }
+      font-size: 46px;
+      line-height: 46px; } }
 
 .p2 {
   font-family: "Bold";
@@ -26,8 +26,8 @@
   line-height: 82px; }
   @media (max-width: 1199px) {
     .p2 {
-      font-size: 62px;
-      line-height: 62px; } }
+      font-size: 46px;
+      line-height: 46px; } }
 
 .p3 {
   font-family: "Light";
@@ -48,7 +48,6 @@
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   border-radius: 40px;
-  color: #fff !important;
   font-family: "Bold"; }
   .btn:hover, .btn:active {
     outline: none;
@@ -59,6 +58,7 @@
     outline: none; }
 
 .btn-naranja {
+  color: #fff !important;
   background: #e5503f; }
   .btn-naranja:hover, .btn-naranja:active {
     background: rgba(229, 80, 63, 0.8);
@@ -68,6 +68,7 @@
     color: #fff; }
 
 .btn-gris {
+  color: #fff !important;
   background: #3e4646; }
   .btn-gris:hover, .btn-gris:active {
     background: rgba(62, 70, 70, 0.8);
@@ -86,7 +87,8 @@
   border-radius: 40px;
   font-family: "semiBold";
   font-size: 29px;
-  transition: all ease 0.2s; }
+  transition: all ease 0.2s;
+  padding: 0px 30px; }
 
 .btn-formu-active {
   border: 2px solid #fff;
@@ -98,7 +100,8 @@
   border-radius: 40px;
   font-family: "semiBold";
   font-size: 29px;
-  transition: all ease 0.2s; }
+  transition: all ease 0.2s;
+  padding: 0px 30px; }
 
 .ir-arriba {
   display: none;
@@ -108,6 +111,8 @@
   bottom: 5px;
   right: 5px;
   background-image: url(../img/flecha.png);
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 41px;
   height: 41px;
   border-radius: 5px;
@@ -364,12 +369,14 @@
 
 .modal-header {
   border: none;
+  padding-left: 35px;
+  padding-right: 35px;
   padding-bottom: 0; }
   .modal-header .close {
     outline: none; }
 
 .modal-body {
-  padding-top: 0; }
+  padding: 0 35px 35px 35px; }
 
 .modal-footer {
   border: none;

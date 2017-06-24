@@ -9,7 +9,6 @@ $btn-bordes: 40px
 .btn
 	font-size: $chica
 	+border-radius($btn-bordes)
-	color: $blanco !important
 	font-family: $bold
 	&:hover, &:active
 		outline: none
@@ -21,6 +20,7 @@ $btn-bordes: 40px
 
 // -- Botón Naranja -- //
 .btn-naranja
+	color: $blanco !important
 	background: $naranja
 	&:hover, &:active
 		background: $naranjaHover
@@ -31,6 +31,7 @@ $btn-bordes: 40px
 
 // -- Botón Gris -- //
 .btn-gris
+	color: $blanco !important
 	background: $gris
 	&:hover, &:active
 		background: $grisHover
@@ -48,6 +49,7 @@ $btn-bordes: 40px
 	font-family: $semiBold
 	font-size: $mediana
 	transition: all ease 0.2s
+	padding: 0px 30px
 
 .btn-formu-active
 	border: 2px solid $blanco
@@ -57,6 +59,7 @@ $btn-bordes: 40px
 	font-family: $semiBold
 	font-size: $mediana
 	transition: all ease 0.2s
+	padding: 0px 30px
 
 // -- Flecha ir arriba -- //
 .ir-arriba 
@@ -67,6 +70,8 @@ $btn-bordes: 40px
 	bottom: 5px
 	right: 5px
 	background-image: url(../img/flecha.png)
+	background-repeat: no-repeat
+	background-position: center center
 	width: 41px
 	height: 41px
 	border-radius: 5px
