@@ -131,6 +131,7 @@
   font-family: "Bold";
   height: 165px;
   margin-bottom: 0;
+  margin-top: 15px;
   padding-top: 25px; }
   @media (max-width: 991px) {
     .navbar {
@@ -141,6 +142,7 @@
   height: 85px; }
 
 .navbar-toggle {
+  border-top: 0;
   margin-top: 40px;
   padding: 0px; }
   .navbar-toggle .icon-bar {
@@ -249,6 +251,10 @@
     background: #e5503f;
     border: 1px solid #e5503f;
     color: #fff; }
+  @media (max-width: 768px) {
+    .navbar-nav li a {
+      line-height: 36px;
+      font-size: 36px; } }
 .navbar-nav li:last-child a:hover {
   border: 1px solid #fff; }
 .navbar-nav li:last-child a:focus {
@@ -265,7 +271,8 @@
 .nosotros .container {
   background-image: url("../img/fondoNosotros.png");
   background-repeat: no-repeat;
-  background-position: right bottom; }
+  background-position: right bottom;
+  padding-top: 75px; }
   @media (max-width: 991px) {
     .nosotros .container {
       background-image: none; } }
@@ -280,7 +287,7 @@
   margin-left: auto;
   margin-right: auto; }
 .nosotros .btn-container {
-  margin-bottom: 0px; }
+  margin-bottom: 75px; }
 
 .tecnologia {
   background-image: url("../img/fondoNaranja.jpg");
@@ -364,7 +371,7 @@
     background-image: url("../img/fondoContacto.png");
     background-position: bottom right;
     background-repeat: no-repeat;
-    height: 352px; }
+    height: 367px; }
     @media (max-width: 991px) {
       .contacto .fondoContacto {
         background: none; } }

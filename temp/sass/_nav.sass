@@ -5,6 +5,7 @@
 	font-family: $bold
 	height: 165px
 	margin-bottom: 0
+	margin-top: 15px
 	padding-top: 25px
 	@media (max-width: 991px)
 		height: 85px
@@ -15,6 +16,7 @@
 	height: 85px
 
 .navbar-toggle
+	border-top: 0
 	margin-top: 40px
 	padding: 0px
 	.icon-bar 
@@ -125,6 +127,9 @@
 				background: $naranja
 				border: 1px solid $naranja
 				color: $blanco
+			@media (max-width: 768px)
+				line-height: $semiGrande
+				font-size: $semiGrande
 		&:last-child
 			a
 				&:hover
