@@ -151,3 +151,11 @@ ideaInput.addEventListener("keypress", completo);
 
 
 }())
+
+
+var anchoPantalla = window.innerWidth;
+var alturaPantalla = window.innerHeight;
+
+if (true) {
+
+}
