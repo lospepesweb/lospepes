@@ -5,6 +5,8 @@
 	@media (max-width: 991px)
 		margin-left: 5%
 		width: 90%
+	@media (max-width: 767px)
+		background-image: url("../img/fondoGrisMovil.jpg")
 
 .modal-header
 	border: none
@@ -30,8 +32,11 @@
 	line-height: $mGrande
 	padding: 20px 0 20px 0
 	@media (max-width: 991px)
-		font-size: $grande
+		font-size: $mGrande
 		line-height: $mGrande
+	@media (max-width: 767px)
+		font-size: $semiGrande + 4px
+		line-height: $semiGrande + 4px
 
 .formContacto
 	.form-group

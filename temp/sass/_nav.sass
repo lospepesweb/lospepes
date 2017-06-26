@@ -81,7 +81,7 @@
 	line-height: 52px
 	@media (max-width: 991px)
 		height: 22px
-		padding: 0 0 50px 0
+		padding: 10px 0 50px 0
 		text-align: center
 		width: 100%
 
@@ -120,6 +120,8 @@
 			margin-left: 3px
 			margin-right: 3px
 			text-align: center
+			@media (max-width: 768px)
+				font-size: $grande
 			&:hover
 				background: $blanco
 				border: 1px solid $naranja
@@ -127,9 +129,6 @@
 				background: $naranja
 				border: 1px solid $naranja
 				color: $blanco
-			@media (max-width: 768px)
-				line-height: $semiGrande
-				font-size: $semiGrande
 		&:last-child
 			a
 				&:hover

@@ -121,7 +121,7 @@
   background-image: url(../img/flecha.png);
   background-repeat: no-repeat;
   background-position: center center;
-  width: 41px;
+  width: 42px;
   height: 41px;
   border-radius: 5px;
   z-index: 9999 !important; }
@@ -205,7 +205,7 @@
   @media (max-width: 991px) {
     .languaje {
       height: 22px;
-      padding: 0 0 50px 0;
+      padding: 10px 0 50px 0;
       text-align: center;
       width: 100%; } }
 
@@ -244,6 +244,9 @@
   margin-left: 3px;
   margin-right: 3px;
   text-align: center; }
+  @media (max-width: 768px) {
+    .navbar-nav li a {
+      font-size: 48px; } }
   .navbar-nav li a:hover {
     background: #fff;
     border: 1px solid #e5503f; }
@@ -251,10 +254,6 @@
     background: #e5503f;
     border: 1px solid #e5503f;
     color: #fff; }
-  @media (max-width: 768px) {
-    .navbar-nav li a {
-      line-height: 36px;
-      font-size: 36px; } }
 .navbar-nav li:last-child a:hover {
   border: 1px solid #fff; }
 .navbar-nav li:last-child a:focus {
@@ -355,6 +354,10 @@
   background-image: url("../img/fondoGris.png");
   background-size: cover;
   padding: 75px 0; }
+  @media (max-width: 767px) {
+    .trabajos {
+      background-image: url("../img/fondoGrisMovil.jpg");
+      background-size: contain; } }
   .trabajos .p1, .trabajos .p2, .trabajos .p3 {
     color: #fff; }
   .trabajos a {
@@ -389,6 +392,9 @@
     .modal-content {
       margin-left: 5%;
       width: 90%; } }
+  @media (max-width: 767px) {
+    .modal-content {
+      background-image: url("../img/fondoGrisMovil.jpg"); } }
 
 .modal-header {
   border: none;
@@ -414,8 +420,12 @@
   padding: 20px 0 20px 0; }
   @media (max-width: 991px) {
     .modal-title {
-      font-size: 48px;
+      font-size: 62px;
       line-height: 62px; } }
+  @media (max-width: 767px) {
+    .modal-title {
+      font-size: 40px;
+      line-height: 40px; } }
 
 .formContacto .form-group {
   margin-bottom: 25px !important;
