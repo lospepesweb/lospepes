@@ -2,11 +2,17 @@
   font-family: "Light";
   src: url("../fonts/TheSansLight.ttf"); }
 @font-face {
+  font-family: "semiLight";
+  src: url("../fonts/TheSansSemiLight.otf"); }
+@font-face {
   font-family: "semiBold";
   src: url("../fonts/TheSans-6-SemiBold.otf"); }
 @font-face {
   font-family: "Bold";
   src: url("../fonts/TheSansBold.otf"); }
+@font-face {
+  font-family: "xBold";
+  src: url("../fonts/TheSansXBold.otf"); }
 .p1, .p2, .p3 {
   margin: 0;
   padding: 0; }
@@ -21,6 +27,7 @@
       line-height: 62px; } }
   @media (max-width: 991px) {
     .p1 {
+      font-family: "semiLight";
       font-size: 46px;
       line-height: 46px; } }
 
@@ -34,6 +41,7 @@
       line-height: 62px; } }
   @media (max-width: 991px) {
     .p2 {
+      font-family: "xBold";
       font-size: 46px;
       line-height: 46px; } }
 
@@ -44,7 +52,11 @@
   margin: 20px 0; }
   @media (max-width: 1199px) {
     .p3 {
-      font-size: 16px; } }
+      font-family: "semiLight"; } }
+  @media (max-width: 767px) {
+    .p3 {
+      font-size: 16px;
+      z-index: 1; } }
 
 .btn-container {
   margin: 10px 0 75px 0;
@@ -121,7 +133,7 @@
   background-image: url(../img/flecha.png);
   background-repeat: no-repeat;
   background-position: center center;
-  width: 42px;
+  width: 45px;
   height: 41px;
   border-radius: 5px;
   z-index: 9999 !important; }
@@ -204,10 +216,13 @@
   line-height: 52px; }
   @media (max-width: 991px) {
     .languaje {
-      height: 22px;
-      padding: 10px 0 50px 0;
+      background-color: #fff;
       text-align: center;
-      width: 100%; } }
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #3e4646;
+      width: 100%;
+      position: relative;
+      z-index: 2; } }
 
 .btn-languaje {
   background: none;
@@ -232,6 +247,9 @@
 .languaje-bar {
   color: #3e4646; }
 
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 30px; } }
 .navbar-nav li a {
   background: #fff;
   border: 1px solid #fff;
@@ -241,12 +259,11 @@
   border-radius: 40px;
   color: #e5503f;
   font-size: 20px;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin: 5px 3px;
   text-align: center; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .navbar-nav li a {
-      font-size: 48px; } }
+      margin: 20px 3px; } }
   .navbar-nav li a:hover {
     background: #fff;
     border: 1px solid #e5503f; }
@@ -332,9 +349,9 @@
     font-family: "Bold";
     font-size: 29px;
     margin-top: 50px; }
-  @media (max-width: 991px) {
-    .servicios h2.movil {
-      margin-top: 22px; } }
+    @media (max-width: 991px) {
+      .servicios h2 {
+        margin-top: 22px; } }
   .servicios .lineaServ {
     border-bottom: 1px solid rgba(62, 70, 70, 0.8);
     float: left;
@@ -343,6 +360,7 @@
   .servicios p {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
     width: 70%; }
     @media (max-width: 991px) {
       .servicios p {
@@ -367,6 +385,9 @@
     padding-right: auto; }
   .trabajos img {
     display: inline-block; }
+    @media (max-width: 991px) {
+      .trabajos img {
+        height: 150px; } }
 
 .contacto {
   padding: 75px 0 0 0; }
@@ -403,6 +424,10 @@
   padding-bottom: 0; }
   .modal-header .close {
     outline: none; }
+    @media (max-width: 767px) {
+      .modal-header .close {
+        position: absolute;
+        right: 15px !important; } }
 
 .modal-body {
   padding: 0 35px 35px 35px; }
@@ -434,6 +459,10 @@
   color: #fff;
   font-family: "semiBold";
   font-size: 29px; }
+  @media (max-width: 767px) {
+    .formContacto label {
+      font-size: 25px;
+      line-height: 25px; } }
 .formContacto input, .formContacto textarea {
   color: #fff;
   background: transparent;

@@ -4,6 +4,8 @@
 // VARIABLES
 var btnEsp = document.getElementById("esp");
 var btnEng = document.getElementById("eng");
+var btnXsEsp = document.getElementById("espxs");
+var btnXsEng = document.getElementById("engxs");
 
 // FUNCIONES
 // Agrego clase al botón español y se la saco al ingles
@@ -11,15 +13,26 @@ var colorEsp = function(){
 	btnEsp.className = "btn btn-languaje-active";
 	btnEng.className = "btn btn-languaje";
 };
+function colorXsESP(){
+	btnXsEsp.className = "btn btn-languaje-active";
+	btnXsEng.className = "btn btn-languaje";
+};
 // Agrego clase al botón ingles y se la saco al español
 var colorEng = function(){
 	btnEng.className = "btn btn-languaje-active";
 	btnEsp.className = "btn btn-languaje";
 };
 
+function colorXsEng(){
+	btnXsEsp.className = "btn btn-languaje";
+	btnXsEng.className = "btn btn-languaje-active";
+}
+
 // EVENTOS
 btnEsp.addEventListener("click", colorEsp);
 btnEng.addEventListener("click", colorEng);
+btnXsEsp.addEventListener("click", colorXsESP);
+btnXsEng.addEventListener("click", colorXsEng);
 
 
 
@@ -27,7 +40,7 @@ btnEng.addEventListener("click", colorEng);
 // -- CENTRADO VERTICAL DEL FORMULARIO -- //
 // VARIABLES
 var alturaPantalla = window.innerHeight;
-var alturaDiv = 559 + 2 // document.getElementById("modal-dialog").clientHeight;
+var alturaDiv = 524 // document.getElementById("modal-dialog").clientHeight;
 var margen = (alturaPantalla - alturaDiv) / 2;
 
 // FUNCIONES
@@ -56,15 +69,12 @@ $(document).ready(function(){
 // -- AJUSTE DEL MENU DESPLEGABLE A LA ALTURA DEL CELULAR -- //
 // VARIALBES
 var anchoPantalla = window.innerWidth;
-var tamanoLI = (alturaPantalla - 270) * 0.20;
+var alturaBTN = ((alturaPantalla - 473) * 0.5898 ) + 9;
+var marignTOP = (alturaPantalla - 473) * 0.4102;
 
 // FUNCIONES
 if (anchoPantalla < 767) {
-	document.getElementById("a1").setAttribute("style","line-height:"+tamanoLI+"px");
-	document.getElementById("a2").setAttribute("style","line-height:"+tamanoLI+"px");
-	document.getElementById("a3").setAttribute("style","line-height:"+tamanoLI+"px");
-	document.getElementById("a4").setAttribute("style","line-height:"+tamanoLI+"px");
-	document.getElementById("a5").setAttribute("style","line-height:"+tamanoLI+"px");
+	document.getElementById("btn-languaje").setAttribute("style","height:"+alturaBTN+"px; margin-top:"+marignTOP+"px");
 }
 
 

@@ -80,10 +80,13 @@
 	height: 107px
 	line-height: 52px
 	@media (max-width: 991px)
-		height: 22px
-		padding: 10px 0 50px 0
+		background-color: $blanco
 		text-align: center
+		border-top: 1px solid $blanco
+		border-bottom: 1px solid $gris
 		width: 100%
+		position: relative
+		z-index: 2
 
 .btn-languaje
 	background: none
@@ -94,6 +97,7 @@
 		box-shadow: none
 		color: $grisLanguaje
 		outline: none 
+
 
 .btn-languaje-active
 	background: none
@@ -110,6 +114,8 @@
 
 // -- Lista de los elementos del Menú -- //
 .navbar-nav
+	@media (max-width: 991px)
+		margin-top: 30px
 	li
 		a
 			background: $blanco
@@ -117,11 +123,10 @@
 			+border-radius(40px)
 			color: $naranja
 			font-size: $chica
-			margin-left: 3px
-			margin-right: 3px
+			margin: 5px 3px
 			text-align: center
-			@media (max-width: 768px)
-				font-size: $grande
+			@media (max-width: 991px)
+				margin: 20px 3px
 			&:hover
 				background: $blanco
 				border: 1px solid $naranja

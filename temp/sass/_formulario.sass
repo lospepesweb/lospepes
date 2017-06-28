@@ -16,6 +16,10 @@
 	.close
 		&:active, &:focus, &:hover
 		outline: none
+		@media (max-width: 767px)
+			position: absolute
+			right: 15px !important
+
 .modal-body
 	padding: 0 35px 35px 35px
 
@@ -46,6 +50,9 @@
 		color: #fff
 		font-family: $semiBold
 		font-size: $mediana
+		@media (max-width: 767px)
+			font-size: $chica + 5
+			line-height: $chica + 5
 	input, textarea
 		color: #fff
 		background: transparent

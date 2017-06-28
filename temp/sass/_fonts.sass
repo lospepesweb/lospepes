@@ -1,8 +1,10 @@
 // -- FONTS -- //
 
 $light: "Light"
+$semiLight: "semiLight"
 $semiBold: "semiBold"
 $bold: "Bold"
+$xBold: "xBold"
 
 $xGrande: 82px
 $mGrande: 62px
@@ -17,12 +19,19 @@ $mChica: 16px
 	src: url("../fonts/TheSansLight.ttf")
 
 @font-face
+	font-family: "semiLight"
+	src: url("../fonts/TheSansSemiLight.otf")
+
+@font-face
 	font-family: "semiBold"
 	src: url("../fonts/TheSans-6-SemiBold.otf")
 
 @font-face
 	font-family: "Bold"
 	src: url("../fonts/TheSansBold.otf")
+@font-face
+	font-family: "xBold"
+	src: url("../fonts/TheSansXBold.otf")
 
 .p1, .p2, .p3
 	margin: 0
@@ -36,6 +45,7 @@ $mChica: 16px
 		font-size: $mGrande
 		line-height: $mGrande
 	@media (max-width: 991px)
+		font-family: $semiLight
 		font-size: $grande - 2px
 		line-height: $grande - 2px
 
@@ -47,6 +57,7 @@ $mChica: 16px
 		font-size: $mGrande
 		line-height: $mGrande
 	@media (max-width: 991px)
+		font-family: $xBold
 		font-size: $grande - 2px
 		line-height: $grande - 2px
 
@@ -56,4 +67,7 @@ $mChica: 16px
 	line-height: $chica + 6px
 	margin: 20px 0
 	@media (max-width: 1199px)
+		font-family: $semiLight
+	@media (max-width: 767px)
 		font-size: $mChica
+		z-index: 1
