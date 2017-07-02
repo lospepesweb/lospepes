@@ -464,6 +464,13 @@ strong {
   border: none;
   text-align: left;
   padding: 30px 0 0 0; }
+  .modal-footer .btn-formu {
+    float: left; }
+  .modal-footer img {
+    display: none;
+    margin-top: 6px;
+    margin-left: 6px;
+    width: 35px; }
 
 .modal-title {
   color: #fff;
