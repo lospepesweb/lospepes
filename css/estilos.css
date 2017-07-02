@@ -263,7 +263,7 @@
   text-align: center; }
   @media (max-width: 991px) {
     .navbar-nav li a {
-      margin: 20px 3px; } }
+      margin: 15px 3px; } }
   .navbar-nav li a:hover {
     background: #fff;
     border: 1px solid #e5503f; }
@@ -403,25 +403,50 @@
     color: #3e4646; }
   .contacto a {
     color: #3e4646; }
-    .contacto a:hover {
+    .contacto a:hover, .contacto a:focus {
       font-weight: 600;
-      text-decoration: none; }
+      text-decoration: none !important; }
 
 .modal-content {
   background-image: url("../img/fondoGris.png"); }
   @media (max-width: 991px) {
     .modal-content {
       margin-left: 5%;
-      width: 90%; } }
+      width: 90%;
+      background-size: cover; } }
   @media (max-width: 767px) {
     .modal-content {
-      background-image: url("../img/fondoGrisMovil.jpg"); } }
+      background-image: url("../img/fondoGrisMovil.jpg");
+      background-size: contain; } }
+  .modal-content .alert {
+    border: 0;
+    background-image: url("../img/fondoGris.png");
+    height: 547px;
+    margin: 0 !important;
+    padding: 35px; }
+    .modal-content .alert h4 {
+      color: #fff;
+      font-family: "Bold";
+      font-size: 48px;
+      text-align: center;
+      margin-top: 184px; }
+      @media (max-width: 767px) {
+        .modal-content .alert h4 {
+          font-size: 40px;
+          line-height: 40px; } }
+    .modal-content .alert h6 {
+      color: #fff;
+      font-family: "Bold";
+      font-size: 25px;
+      text-align: center; }
+      @media (max-width: 767px) {
+        .modal-content .alert h6 {
+          font-size: 11px;
+          line-height: 11px; } }
 
 .modal-header {
   border: none;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-bottom: 0; }
+  padding: 0; }
   .modal-header .close {
     outline: none; }
     @media (max-width: 767px) {
@@ -430,7 +455,7 @@
         right: 15px !important; } }
 
 .modal-body {
-  padding: 0 35px 35px 35px; }
+  padding: 35px 35px 35px 35px; }
 
 .modal-footer {
   border: none;
@@ -442,7 +467,7 @@
   font-family: "Bold";
   font-size: 62px;
   line-height: 62px;
-  padding: 20px 0 20px 0; }
+  padding: 0; }
   @media (max-width: 991px) {
     .modal-title {
       font-size: 62px;

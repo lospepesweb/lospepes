@@ -40,7 +40,7 @@ btnXsEng.addEventListener("click", colorXsEng);
 // -- CENTRADO VERTICAL DEL FORMULARIO -- //
 // VARIABLES
 var alturaPantalla = window.innerHeight;
-var alturaDiv = 524 // document.getElementById("modal-dialog").clientHeight;
+var alturaDiv = 547 // document.getElementById("modal-dialog").clientHeight;
 var margen = (alturaPantalla - alturaDiv) / 2;
 
 // FUNCIONES
@@ -69,15 +69,13 @@ $(document).ready(function(){
 // -- AJUSTE DEL MENU DESPLEGABLE A LA ALTURA DEL CELULAR -- //
 // VARIALBES
 var anchoPantalla = window.innerWidth;
-var alturaBTN = ((alturaPantalla - 473) * 0.5898 ) + 9;
-var marignTOP = (alturaPantalla - 473) * 0.4102;
+var alturaBTN = ((alturaPantalla - 463.5) * 0.5898 ) + 30;
+var marignTOP = (alturaPantalla - 463.5) * 0.4102;
 
 // FUNCIONES
 if (anchoPantalla < 767) {
 	document.getElementById("btn-languaje").setAttribute("style","height:"+alturaBTN+"px; margin-top:"+marignTOP+"px");
 }
-
-
 
 
 // -- COMPORTAMIENTO DEL BOTÓN ENTRAR -- //

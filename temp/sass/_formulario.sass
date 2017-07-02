@@ -5,14 +5,37 @@
 	@media (max-width: 991px)
 		margin-left: 5%
 		width: 90%
+		background-size: cover
 	@media (max-width: 767px)
 		background-image: url("../img/fondoGrisMovil.jpg")
+		background-size: contain
+	.alert
+		border: 0
+		background-image: url("../img/fondoGris.png")
+		height: 547px
+		margin: 0 !important
+		padding: 35px
+		h4
+			color: $blanco
+			font-family: $bold
+			font-size: $grande
+			text-align: center
+			margin-top: 184px
+			@media (max-width: 767px)
+				font-size: $semiGrande + 4px
+				line-height: $semiGrande + 4px
+		h6
+			color: $blanco
+			font-family: $bold
+			font-size: $mediana - 4
+			text-align: center
+			@media (max-width: 767px)
+				font-size: $mChica - 5
+				line-height: $mChica - 5
 
 .modal-header
 	border: none
-	padding-left: 35px
-	padding-right: 35px
-	padding-bottom: 0
+	padding: 0
 	.close
 		&:active, &:focus, &:hover
 		outline: none
@@ -21,7 +44,7 @@
 			right: 15px !important
 
 .modal-body
-	padding: 0 35px 35px 35px
+	padding: 35px 35px 35px 35px
 
 
 .modal-footer
@@ -34,7 +57,7 @@
 	font-family: $bold
 	font-size: $mGrande
 	line-height: $mGrande
-	padding: 20px 0 20px 0
+	padding: 0
 	@media (max-width: 991px)
 		font-size: $mGrande
 		line-height: $mGrande
