@@ -141,6 +141,9 @@ strong {
   border-radius: 5px;
   z-index: 9999 !important; }
 
+h1 {
+  display: none !important; }
+
 .navbar {
   border: 0px;
   font-family: "Bold";
